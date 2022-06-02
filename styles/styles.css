@@ -1,0 +1,142 @@
+header .nav-container .logo, main .serv .serv-container .serv-img .serv-card .card-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .serv .serv-container .serv-img .serv-card {
+  width: 25%;
+  height: 400px;
+  position: relative;
+}
+main .serv .serv-container .serv-img .serv-card .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+main .serv .serv-container .serv-img .serv-card .card-front {
+  transform: perspective(500px) rotateY(0deg);
+  background-image: url(../assets/images/servicios-1.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.301);
+  background-blend-mode: darken;
+  text-shadow: 0 0 5px black;
+}
+main .serv .serv-container .serv-img .serv-card .card-front p {
+  width: 230px;
+  font-size: 16px;
+  line-height: 26px;
+}
+main .serv .serv-container .serv-img .serv-card .card-back {
+  transform: perspective(500px) rotateY(180deg);
+  background-color: #1e66c5;
+}
+main .serv .serv-container .serv-img .serv-card .card-back p {
+  width: 230px;
+  font-size: 16px;
+  line-height: 26px;
+}
+main .serv .serv-container .serv-img .serv-card:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+main .serv .serv-container .serv-img .serv-card:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .nav-container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-container .logo {
+  width: 200px;
+}
+header .nav-container nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+}
+header .nav-container nav ul li {
+  list-style: none;
+  padding: 100% 20px;
+}
+header .nav-container nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+header .nav-container nav ul li:hover {
+  background-color: #1e66c5;
+  color: white;
+  cursor: pointer;
+}
+header .banner img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+main .nosot {
+  width: 1100px;
+}
+main .nosot .title {
+  margin-top: 50px;
+}
+main .nosot .nosot-container {
+  display: flex;
+}
+main .nosot .nosot-container .nosot-text {
+  width: 50%;
+}
+main .nosot .nosot-container .nosot-text p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .nosot .nosot-container .nosot-img {
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+}
+main .nosot .nosot-container .nosot-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .serv {
+  width: 1100px;
+}
+main .serv .title {
+  margin-top: 50px;
+}
+main .serv .serv-container .serv-text p {
+  padding: 18px 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .serv .serv-container .serv-img {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,98 @@
+@import "variables";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    .nav-container {
+        height: 70px;
+        @include flex(flex, space-between, center);
+        .logo {
+            width: 200px;
+            @extend %centrar;
+        }
+        nav {
+            ul {
+                margin: 0;
+                padding: 0;
+                @include flex(flex, space-between, none);
+                li {
+                    list-style: none;
+                    padding: 100% 20px;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-weight: bold;
+                    }
+                }
+                li:hover {
+                    background-color: $main-color;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+main {
+    @include flex(flex, none, center);
+    flex-direction: column;
+
+    .nosot {
+        width: 1100px;
+        .title {
+            margin-top: 50px;
+        }
+        .nosot-container {
+            display: flex;
+            .nosot-text {
+                width: 50%;
+                p {
+                    width: 80%;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .nosot-img {
+                width: 50%;
+                height: 300px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .serv {
+        width: 1100px;
+        .title {
+            margin-top: 50px;
+        }
+        .serv-container {
+            .serv-text {
+                p {
+                    padding: 18px 0;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .serv-img {
+                @include flex(flex, none, none);
+                @extend %serv-card;
+            }
+        }
+    }
+}
