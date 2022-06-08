@@ -1,4 +1,4 @@
-header .nav-container .logo, main .serv .serv-container .serv-img .serv-card .card-face {
+header .nav-container .logo, main .prod .prod-container .prod-img .prod-card .card-face, main .serv .serv-container .serv-img .serv-card .card-face {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@ header .nav-container .logo, main .serv .serv-container .serv-img .serv-card .ca
 
 main .serv .serv-container .serv-img .serv-card {
   width: 25%;
-  height: 400px;
+  height: 430px;
   position: relative;
 }
 main .serv .serv-container .serv-img .serv-card .card-face {
@@ -21,12 +21,14 @@ main .serv .serv-container .serv-img .serv-card .card-face {
 }
 main .serv .serv-container .serv-img .serv-card .card-front {
   transform: perspective(500px) rotateY(0deg);
-  background-image: url(../assets/images/servicios-1.jpeg);
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.301);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
   text-shadow: 0 0 5px black;
+}
+main .serv .serv-container .serv-img .serv-card .card-front h3 {
+  font-size: 25px;
 }
 main .serv .serv-container .serv-img .serv-card .card-front p {
   width: 230px;
@@ -35,18 +37,73 @@ main .serv .serv-container .serv-img .serv-card .card-front p {
 }
 main .serv .serv-container .serv-img .serv-card .card-back {
   transform: perspective(500px) rotateY(180deg);
-  background-color: #1e66c5;
+  background-color: #353535;
 }
 main .serv .serv-container .serv-img .serv-card .card-back p {
   width: 230px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 22px;
 }
 main .serv .serv-container .serv-img .serv-card:hover .card-front {
   transform: perspective(500px) rotateY(180deg);
 }
 main .serv .serv-container .serv-img .serv-card:hover .card-back {
   transform: perspective(500px) rotateY(360deg);
+}
+
+main .prod .prod-container .prod-img .prod-card {
+  width: 25%;
+  height: 460px;
+  position: relative;
+}
+main .prod .prod-container .prod-img .prod-card .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+main .prod .prod-container .prod-img .prod-card .card-front {
+  transform: perspective(500px) rotateY(0deg);
+  background-color: white;
+}
+main .prod .prod-container .prod-img .prod-card .card-front img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+main .prod .prod-container .prod-img .prod-card .card-front h3 {
+  text-shadow: 0 0 10px black;
+  font-size: 20px;
+}
+main .prod .prod-container .prod-img .prod-card .card-back {
+  transform: perspective(500px) rotateY(180deg);
+  background-color: #353535;
+}
+main .prod .prod-container .prod-img .prod-card .card-back p {
+  line-height: 24px;
+  padding: 0 30px 20px 30px;
+}
+main .prod .prod-container .prod-img .prod-card:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+main .prod .prod-container .prod-img .prod-card:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+main .serv .serv-container .serv-img .serv-card .card-front .btn, main .serv .serv-container .serv-img .serv-card .card-back .btn, main .prod .prod-container .prod-img .prod-card .card-back button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e66c5;
+  padding: 8px 25px;
+  margin: 1em 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 body {
@@ -121,12 +178,13 @@ main .nosot .nosot-container .nosot-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 main .serv {
   width: 1100px;
 }
 main .serv .title {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 main .serv .serv-container .serv-text p {
   padding: 18px 0;
@@ -137,6 +195,35 @@ main .serv .serv-container .serv-img {
   display: flex;
   justify-content: none;
   align-items: none;
+}
+main .serv .serv-container .serv-img .serv-img-disenio .card-front {
+  background-image: url(../assets/images/disenio-3d.jpeg);
+}
+main .serv .serv-container .serv-img .serv-img-impresion .card-front {
+  background-image: url(../assets/images/impresion-3d.jpeg);
+}
+main .serv .serv-container .serv-img .serv-img-impresion .card-back p {
+  margin-bottom: 0;
+}
+main .serv .serv-container .serv-img .serv-img-soluciones .card-front {
+  background-image: url(../assets/images/soluciones-tecnologicas.jpeg);
+}
+main .serv .serv-container .serv-img .serv-img-proyectos .card-front {
+  background-image: url(../assets/images/proyectos-educativos.jpeg);
+}
+main .prod {
+  width: 1110px;
+}
+main .prod .title {
+  margin-top: 70px;
+}
+main .prod .prod-container .prod-text p {
+  padding: 18px 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .prod .prod-container .prod-img {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

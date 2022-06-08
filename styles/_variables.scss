@@ -1,4 +1,5 @@
 $main-color: rgb(30, 102, 197);
+$secondary-color: rgb(53, 53, 53);
 
 %centrar {
     display: flex;
@@ -9,7 +10,7 @@ $main-color: rgb(30, 102, 197);
 %serv-card {
     .serv-card {
         width: 25%;
-        height: 400px;
+        height: 430px;
         position: relative;
         .card-face {
             position: absolute;
@@ -24,25 +25,33 @@ $main-color: rgb(30, 102, 197);
         }
         .card-front {
             transform: perspective(500px) rotateY(0deg);
-            background-image: url(../assets/images/servicios-1.jpeg);
             background-position: center center;
             background-size: cover;
-            background-color: rgba(0, 0, 0, 0.301);
+            background-color: rgba(0, 0, 0, 0.2);
             background-blend-mode: darken;
             text-shadow: 0 0 5px black;
+            h3 {
+                font-size: 25px;
+            }
             p {
                 width: 230px;
                 font-size: 16px;
                 line-height: 26px;
             }
+            .btn {
+                @extend %button;
+            }
         }
         .card-back {
             transform: perspective(500px) rotateY(180deg);
-            background-color: $main-color;
+            background-color: $secondary-color;
             p {
                 width: 230px;
                 font-size: 16px;
-                line-height: 26px;
+                line-height: 22px;
+            }
+            .btn {
+                @extend %button;
             }
         }
     }
@@ -53,6 +62,69 @@ $main-color: rgb(30, 102, 197);
         transform: perspective(500px) rotateY(360deg);
     }
 }
+
+%prod-card {
+    .prod-card {
+        width: 25%;
+        height: 460px;
+        position: relative;
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @extend %centrar;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            backface-visibility: hidden;
+            transition: 1s;
+        }
+        .card-front {
+            transform: perspective(500px) rotateY(0deg);
+            background-color: white;
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: contain;
+            }
+            h3 {
+                text-shadow: 0 0 10px black;
+                font-size: 20px;
+            }
+        }
+        .card-back {
+            transform: perspective(500px) rotateY(180deg);
+            background-color: $secondary-color;
+            p {
+                line-height: 24px;
+                padding: 0 30px 20px 30px;
+            }
+            button {
+                @extend %button;
+            }
+        }
+    }
+    .prod-card:hover .card-front {
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .prod-card:hover .card-back {
+        transform: perspective(500px) rotateY(360deg);
+    }
+}
+
+%button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: $main-color;
+    padding: 8px 25px;
+    margin: 1em 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
 
 @mixin flex($display, $justify, $align) {
     display: $display;
