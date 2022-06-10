@@ -1,15 +1,15 @@
-header .nav-container .logo, main .prod .prod-container .prod-img .prod-card .card-face, main .serv .serv-container .serv-img .serv-card .card-face {
+.wsp-button a, footer .footer-container .consultas-redes .redes .redes-icons .icon, header .nav-container .logo, main .productos .prod-container .prod-img .prod-card .card-face, main .servicios .serv-container .serv-img .serv-card .card-face {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .serv .serv-container .serv-img .serv-card {
+main .servicios .serv-container .serv-img .serv-card {
   width: 25%;
   height: 430px;
   position: relative;
 }
-main .serv .serv-container .serv-img .serv-card .card-face {
+main .servicios .serv-container .serv-img .serv-card .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -19,7 +19,7 @@ main .serv .serv-container .serv-img .serv-card .card-face {
   color: white;
   text-align: center;
 }
-main .serv .serv-container .serv-img .serv-card .card-front {
+main .servicios .serv-container .serv-img .serv-card .card-front {
   transform: perspective(500px) rotateY(0deg);
   background-position: center center;
   background-size: cover;
@@ -27,36 +27,43 @@ main .serv .serv-container .serv-img .serv-card .card-front {
   background-blend-mode: darken;
   text-shadow: 0 0 5px black;
 }
-main .serv .serv-container .serv-img .serv-card .card-front h3 {
+main .servicios .serv-container .serv-img .serv-card .card-front h3 {
   font-size: 25px;
 }
-main .serv .serv-container .serv-img .serv-card .card-front p {
+main .servicios .serv-container .serv-img .serv-card .card-front p {
   width: 230px;
   font-size: 16px;
   line-height: 26px;
 }
-main .serv .serv-container .serv-img .serv-card .card-back {
+main .servicios .serv-container .serv-img .serv-card .card-back {
   transform: perspective(500px) rotateY(180deg);
   background-color: #353535;
 }
-main .serv .serv-container .serv-img .serv-card .card-back p {
+main .servicios .serv-container .serv-img .serv-card .card-back p {
   width: 230px;
   font-size: 16px;
   line-height: 22px;
 }
-main .serv .serv-container .serv-img .serv-card:hover .card-front {
+main .servicios .serv-container .serv-img .serv-card .card-back .btn {
+  transition: 0.1s;
+}
+main .servicios .serv-container .serv-img .serv-card .card-back .btn:hover {
+  background-color: #2684ff;
+  box-shadow: 0 0 5px #2684ff;
+}
+main .servicios .serv-container .serv-img .serv-card:hover .card-front {
   transform: perspective(500px) rotateY(180deg);
 }
-main .serv .serv-container .serv-img .serv-card:hover .card-back {
+main .servicios .serv-container .serv-img .serv-card:hover .card-back {
   transform: perspective(500px) rotateY(360deg);
 }
 
-main .prod .prod-container .prod-img .prod-card {
+main .productos .prod-container .prod-img .prod-card {
   width: 25%;
   height: 460px;
   position: relative;
 }
-main .prod .prod-container .prod-img .prod-card .card-face {
+main .productos .prod-container .prod-img .prod-card .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -66,35 +73,42 @@ main .prod .prod-container .prod-img .prod-card .card-face {
   backface-visibility: hidden;
   transition: 1s;
 }
-main .prod .prod-container .prod-img .prod-card .card-front {
+main .productos .prod-container .prod-img .prod-card .card-front {
   transform: perspective(500px) rotateY(0deg);
   background-color: white;
 }
-main .prod .prod-container .prod-img .prod-card .card-front img {
+main .productos .prod-container .prod-img .prod-card .card-front img {
   width: 100%;
   height: 400px;
   object-fit: contain;
 }
-main .prod .prod-container .prod-img .prod-card .card-front h3 {
+main .productos .prod-container .prod-img .prod-card .card-front h3 {
   text-shadow: 0 0 10px black;
   font-size: 20px;
 }
-main .prod .prod-container .prod-img .prod-card .card-back {
+main .productos .prod-container .prod-img .prod-card .card-back {
   transform: perspective(500px) rotateY(180deg);
   background-color: #353535;
 }
-main .prod .prod-container .prod-img .prod-card .card-back p {
+main .productos .prod-container .prod-img .prod-card .card-back p {
   line-height: 24px;
   padding: 0 30px 20px 30px;
 }
-main .prod .prod-container .prod-img .prod-card:hover .card-front {
+main .productos .prod-container .prod-img .prod-card .card-back button {
+  transition: 0.1s;
+}
+main .productos .prod-container .prod-img .prod-card .card-back button:hover {
+  background-color: #2684ff;
+  box-shadow: 0 0 5px #2684ff;
+}
+main .productos .prod-container .prod-img .prod-card:hover .card-front {
   transform: perspective(500px) rotateY(180deg);
 }
-main .prod .prod-container .prod-img .prod-card:hover .card-back {
+main .productos .prod-container .prod-img .prod-card:hover .card-back {
   transform: perspective(500px) rotateY(360deg);
 }
 
-main .serv .serv-container .serv-img .serv-card .card-front .btn, main .serv .serv-container .serv-img .serv-card .card-back .btn, main .prod .prod-container .prod-img .prod-card .card-back button {
+footer .footer-container .consultas-redes .consultas a button, main .servicios .serv-container .serv-img .serv-card .card-front .btn, main .servicios .serv-container .serv-img .serv-card .card-back .btn, main .productos .prod-container .prod-img .prod-card .card-back button {
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -120,6 +134,10 @@ header .nav-container {
 }
 header .nav-container .logo {
   width: 200px;
+  padding: 0 30px;
+}
+header .nav-container .logo img {
+  width: 100%;
 }
 header .nav-container nav ul {
   margin: 0;
@@ -131,6 +149,8 @@ header .nav-container nav ul {
 header .nav-container nav ul li {
   list-style: none;
   padding: 100% 20px;
+  color: #444444;
+  transition: 0.3s;
 }
 header .nav-container nav ul li a {
   text-decoration: none;
@@ -152,78 +172,219 @@ main {
   align-items: center;
   flex-direction: column;
 }
-main .nosot {
+main .nosotros {
   width: 1100px;
 }
-main .nosot .title {
+main .nosotros .title {
   margin-top: 50px;
+  display: flex;
+  color: #444444;
 }
-main .nosot .nosot-container {
+main .nosotros .title img {
+  width: 50px;
+  padding-right: 20px;
+}
+main .nosotros .nosot-container {
   display: flex;
 }
-main .nosot .nosot-container .nosot-text {
+main .nosotros .nosot-container .nosot-text {
   width: 50%;
 }
-main .nosot .nosot-container .nosot-text p {
-  width: 80%;
+main .nosotros .nosot-container .nosot-text p {
+  width: 70%;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 26px;
+  color: #444444;
 }
-main .nosot .nosot-container .nosot-img {
+main .nosotros .nosot-container .nosot-img {
   width: 50%;
   height: 300px;
   overflow: hidden;
 }
-main .nosot .nosot-container .nosot-img img {
+main .nosotros .nosot-container .nosot-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
-main .serv {
+main .servicios {
   width: 1100px;
 }
-main .serv .title {
+main .servicios .title {
   margin-top: 70px;
+  display: flex;
+  color: #444444;
 }
-main .serv .serv-container .serv-text p {
-  padding: 18px 0;
+main .servicios .title img {
+  width: 50px;
+  padding-right: 20px;
+}
+main .servicios .serv-container .serv-text p {
+  padding: 18px 0 18px 70px;
   font-size: 18px;
   line-height: 26px;
+  color: #444444;
 }
-main .serv .serv-container .serv-img {
+main .servicios .serv-container .serv-img {
   display: flex;
   justify-content: none;
   align-items: none;
 }
-main .serv .serv-container .serv-img .serv-img-disenio .card-front {
+main .servicios .serv-container .serv-img .serv-img-disenio .card-front {
   background-image: url(../assets/images/disenio-3d.jpeg);
 }
-main .serv .serv-container .serv-img .serv-img-impresion .card-front {
+main .servicios .serv-container .serv-img .serv-img-impresion .card-front {
   background-image: url(../assets/images/impresion-3d.jpeg);
 }
-main .serv .serv-container .serv-img .serv-img-impresion .card-back p {
+main .servicios .serv-container .serv-img .serv-img-impresion .card-back p {
   margin-bottom: 0;
 }
-main .serv .serv-container .serv-img .serv-img-soluciones .card-front {
+main .servicios .serv-container .serv-img .serv-img-soluciones .card-front {
   background-image: url(../assets/images/soluciones-tecnologicas.jpeg);
 }
-main .serv .serv-container .serv-img .serv-img-proyectos .card-front {
+main .servicios .serv-container .serv-img .serv-img-proyectos .card-front {
   background-image: url(../assets/images/proyectos-educativos.jpeg);
 }
-main .prod {
+main .productos {
   width: 1110px;
 }
-main .prod .title {
+main .productos .title {
   margin-top: 70px;
+  display: flex;
+  color: #444444;
 }
-main .prod .prod-container .prod-text p {
-  padding: 18px 0;
+main .productos .title img {
+  width: 50px;
+  padding-right: 20px;
+}
+main .productos .prod-container .prod-text p {
+  padding: 18px 0 18px 70px;
   font-size: 18px;
   line-height: 26px;
+  color: #444444;
 }
-main .prod .prod-container .prod-img {
+main .productos .prod-container .prod-img {
   display: flex;
+}
+main .contacto {
+  width: 1100px;
+}
+main .contacto .title {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  display: flex;
+  color: #444444;
+}
+main .contacto .title img {
+  width: 50px;
+  padding-right: 20px;
+}
+footer {
+  background-color: #1e66c5;
+}
+footer .footer-container {
+  width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer-container .horario {
+  width: 33%;
+}
+footer .footer-container .horario .horario-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer .footer-container .horario p {
+  margin: 0;
+  line-height: 28px;
+}
+footer .footer-container .ubicacion {
+  width: 33%;
+}
+footer .footer-container .ubicacion .ubicacion-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer .footer-container .ubicacion p {
+  margin: 0;
+  line-height: 28px;
+}
+footer .footer-container .consultas-redes {
+  width: 33%;
+}
+footer .footer-container .consultas-redes .consultas p {
+  font-weight: bold;
+  margin: 0;
+  line-height: 28px;
+}
+footer .footer-container .consultas-redes .consultas a button {
+  background-color: #353535;
+  transition: 0.1s;
+  height: 34px;
+  width: 124.672px;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer .footer-container .consultas-redes .consultas a button:hover {
+  background-color: #2684ff;
+  /* box-shadow: 0 0 5px rgb(38, 132, 255); */
+  border: 2px solid white;
+}
+footer .footer-container .consultas-redes .redes p {
+  font-weight: bold;
+}
+footer .footer-container .consultas-redes .redes .redes-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .consultas-redes .redes .redes-icons .icon {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+footer .footer-container .consultas-redes .redes .redes-icons .icon img {
+  width: 26px;
+  transition: 0.1s;
+}
+footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
+  width: 30px;
+}
+
+.wsp-button {
+  width: 220px;
+  height: 40px;
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 0px;
+}
+.wsp-button a {
+  height: 100%;
+  background-color: #2BB741;
+  border-radius: 20px 0 0 20px;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.wsp-button a img {
+  width: 25px;
+  transition: 0.1s;
+}
+.wsp-button a p {
+  font-size: 14px;
+  color: white;
+  padding-left: 10px;
+  transition: 0.1s;
+}
+.wsp-button a:hover {
+  background-color: #28d843;
 }
 
 /*# sourceMappingURL=styles.css.map */

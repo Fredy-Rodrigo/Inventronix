@@ -11,14 +11,14 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <span>INVENTRONIX</span>
+                <img src="./assets/images/logo.png" alt="">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">SERVICIOS</a></li>
-                    <li><a href="#">PRODUCTOS</a></li>
-                    <li><a href="#">CONTÁCTANOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#contacto">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,8 +28,11 @@
     </header>
 
     <main>
-        <section class="nosot">
-            <h2 class="title">NOSOTROS</h2>
+        <section id="nosotros" class="nosotros">
+            <div class="title">
+                <img src="./assets/icons/nosotros-icon.svg" alt="">
+                <h2>NOSOTROS</h2>
+            </div>
             <div class="nosot-container">
                 <div class="nosot-text">
                     <p>Somos una empresa multidiciplinaria cuyo objetivo es ofrecer productos y servicios innovadores para la educación y vida cotidiana utilizando e integrando las últimas tendencias tecnológicas como el diseño 3d, impresión 3d, realidad virtual y mixta; ademas de la transferencia, licenciamiento y venta de patentes de invención o modelos de utilidad.
@@ -40,8 +43,11 @@
                 </div>
             </div>
         </section>
-        <section class="serv">
-            <h2 class="title">SERVICIOS</h2>
+        <section id="servicios" class="servicios">
+            <div class="title">
+                <img src="./assets/icons/servicios-icon.svg" alt="">
+                <h2>SERVICIOS</h2>
+            </div>
             <div class="serv-container">
                 <div class="serv-text">
                     <p>No importa la necesidad que tengas, nuestro equipo lo puede hacer realidad.</p>
@@ -50,7 +56,7 @@
                     <div class="serv-card serv-img-disenio">
                         <div class="card-face card-front">
                             <h3>DISEÑO 3D</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Creamos diseños basados en tus necesidades.</p>
                             <button class="btn">Ver más</button>
                         </div>
                         <div class="card-face card-back">
@@ -61,7 +67,7 @@
                     <div class="serv-card serv-img-impresion">
                         <div class="card-face card-front">
                             <h3>IMPRESION 3D</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Plasmamos tus diseños en la vida real.</p>
                             <button class="btn">Ver más</button>
                         </div>
                         <div class="card-face card-back">
@@ -72,7 +78,7 @@
                     <div class="serv-card serv-img-soluciones">
                         <div class="card-face card-front">
                             <h3>SOLUCIONES TECNOLOGICAS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Nuestro grupo de investigación te dará la mejor solución.</p>
                             <button class="btn">Ver más</button>
                         </div>
                         <div class="card-face card-back">
@@ -83,7 +89,7 @@
                     <div class="serv-card serv-img-proyectos">
                         <div class="card-face card-front">
                             <h3>PROYECTOS EDUCATIVOS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Ayudamos a los estudiantes a realizar sus proyectos.</p>
                             <button class="btn">Ver más</button>
                         </div>
                         <div class="card-face card-back">
@@ -94,8 +100,11 @@
                 </div>
             </div>
         </section>
-        <section class="prod">
-            <h2 class="title">PRODUCTOS</h2>
+        <section id="productos" class="productos">
+            <div class="title">
+                <img src="./assets/icons/productos-icon.svg" alt="">
+                <h2>PRODUCTOS</h2>
+            </div>
             <div class="prod-container">
                 <div class="prod-text">
                     <p>No importa la necesidad que tengas, nuestro equipo lo puede hacer realidad.</p>
@@ -148,15 +157,59 @@
                 </div>
             </div>
         </section>
-        <section class="contac">
-            <h2 class="title">CONTACTANOS</h2>
+        <section id="contacto" class="contacto">
+            <div class="title">
+                <img src="./assets/icons/contacto-icon.svg" alt="">
+                <h2>CONTÁCTANOS</h2>
+            </div>
             <div class="contac-container">
                 <div class="contac-text"></div>
                 <div class="contac-img"></div>
             </div>
         </section>
     </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="horario">
+                <p class="horario-title">Horario de atención:</p>
+                <p>Lunes - Viernes 9:00am - 7:00pm</p>
+                <p>Sábados 9:00am - 2:00pm</p>
+            </div>
+            <div class="ubicacion">
+                <p class="ubicacion-title">Nuestra ubicación:</p>
+                <p>Jr. Piura Callao</p>
+                <p>Teléfono: 966 519 351</p>
+                <p>Correo: inventronix3d@gmail.com</p>
+            </div>
+            <div class="consultas-redes">
+                <div class="consultas">
+                    <p>Consultas y dudas:</p>
+                    <a href="https://wa.me/51966519351?text=Hola,%20solicito%20información" target="_blank"><button>Consultar</button></a>
+                </div>
+                <div class="redes">
+                    <p>Síguenos:</p>
+                    <div class="redes-icons">
+                        <a href="#" class="icon">
+                            <img src="./assets/icons/yt-icon.svg" alt="youtube">
+                        </a>
+                        <a href="https://www.facebook.com/inventronix3D" class="icon" target="_blank">
+                            <img src="./assets/icons/fb-icon.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/inventronix3d/" class="icon" target="_blank">
+                            <img src="./assets/icons/ig-icon.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <footer></footer>
+    <div class="wsp-button">
+        <a href="https://wa.me/51966519351?text=Hola,%20solicito%20información" target="_blank">
+            <img src="./assets/icons/wsp-icon.svg" alt="">
+            <p>¿Cómo puedo ayudarte?</p>
+        </a>
+    </div>
 </body>
 </html>

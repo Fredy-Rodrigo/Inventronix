@@ -12,7 +12,11 @@ header {
         @include flex(flex, space-between, center);
         .logo {
             width: 200px;
+            padding: 0 30px;
             @extend %centrar;
+            img {
+                width: 100%;
+            }
         }
         nav {
             ul {
@@ -22,6 +26,8 @@ header {
                 li {
                     list-style: none;
                     padding: 100% 20px;
+                    color: $word-color;
+                    transition: 0.3s;
                     a {
                         text-decoration: none;
                         color: inherit;
@@ -48,19 +54,27 @@ main {
     @include flex(flex, none, center);
     flex-direction: column;
 
-    .nosot {
+    .nosotros {
         width: 1100px;
         .title {
             margin-top: 50px;
+            display: flex;
+            color: $word-color;
+            img {
+                width: 50px;
+                padding-right: 20px;
+            }
         }
         .nosot-container {
             display: flex;
             .nosot-text {
                 width: 50%;
                 p {
-                    width: 80%;
+                    width: 70%;
+                    padding-left: 70px;
                     font-size: 18px;
                     line-height: 26px;
+                    color: $word-color;
                 }
             }
             .nosot-img {
@@ -77,17 +91,24 @@ main {
         }
     }
 
-    .serv {
+    .servicios {
         width: 1100px;
         .title {
             margin-top: 70px;
+            display: flex;
+            color: $word-color;
+            img {
+                width: 50px;
+                padding-right: 20px;
+            }
         }
         .serv-container {
             .serv-text {
                 p {
-                    padding: 18px 0;
+                    padding: 18px 0 18px 70px;
                     font-size: 18px;
                     line-height: 26px;
+                    color: $word-color;
                 }
             }
             .serv-img {
@@ -122,17 +143,24 @@ main {
         }
     }
 
-    .prod {
+    .productos {
         width: 1110px;
         .title {
             margin-top: 70px;
+            display: flex;
+            color: $word-color;
+            img {
+                width: 50px;
+                padding-right: 20px;
+            }
         }
         .prod-container {
             .prod-text {
                 p {
-                    padding: 18px 0;
+                    padding: 18px 0 18px 70px;
                     font-size: 18px;
                     line-height: 26px;
+                    color: $word-color;
                 }
             }
             .prod-img {
@@ -140,5 +168,134 @@ main {
                 @extend %prod-card;
             }
         }
+    }
+
+    .contacto {
+        width: 1100px;
+        .title {
+            margin-top: 70px;
+            margin-bottom: 30px;
+            display: flex;
+            color: $word-color;
+            img {
+                width: 50px;
+                padding-right: 20px;
+            }
+        }
+        .contac-container {
+
+        }
+    }
+}
+
+footer {
+    background-color: $main-color;
+    .footer-container {
+        width: 1000px;
+        margin: auto;
+        padding: 30px 0;
+        color: white;
+        @include flex(flex, space-between, flex-start);
+        .horario {
+            width: 33%;
+            .horario-title {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+                line-height: 28px;
+            }
+        }
+        .ubicacion {
+            width: 33%;
+            .ubicacion-title {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+                line-height: 28px;
+            }
+        }
+        .consultas-redes {
+            width: 33%;
+            .consultas {
+                p {
+                    font-weight: bold;
+                    margin: 0;
+                    line-height: 28px;
+                }
+                a {
+                    button {
+                        @extend %button;
+                        background-color: $secondary-color;
+                        transition: 0.1s;
+                        height: 34px;
+                        width: 124.672px;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    button:hover {
+                        background-color: rgb(38, 132, 255);
+                        /* box-shadow: 0 0 5px rgb(38, 132, 255); */
+                        border: 2px solid white;
+                    }
+                }
+            }
+            .redes {
+                p {
+                    font-weight: bold;
+                }
+                .redes-icons {
+                    width: 200px;
+                    @include flex(flex, space-between, center);
+                    .icon {
+                        background-color: white;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 30px;
+                        @extend %centrar;
+                        img {
+                            width: 26px;
+                            transition: 0.1s;
+                        }
+                    }
+                    .icon:hover img{
+                        width: 30px;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+.wsp-button {
+    width: 220px;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 0px;
+    a {
+        height: 100%;
+        background-color: #2BB741;
+        border-radius: 20px 0 0 20px;
+        text-decoration: none;
+        @extend %centrar;
+        transition: 0.1s;
+        img {
+            width: 25px;
+            transition: 0.1s;
+        }
+        p {
+            font-size: 14px;
+            color: white;
+            padding-left: 10px;
+            transition: 0.1s;
+        }
+    }
+    a:hover {
+        background-color: #28d843;
     }
 }
