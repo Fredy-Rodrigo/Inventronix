@@ -15,10 +15,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#servicios">SERVICIOS</a></li>
-                    <li><a href="#productos">PRODUCTOS</a></li>
-                    <li><a href="#contacto">CONTÁCTANOS</a></li>
+                    <li><a href="javascript:deslizar('nosotros')">NOSOTROS</a></li>
+                    <li><a href="javascript:deslizar('servicios')">SERVICIOS</a></li>
+                    <li><a href="javascript:deslizar('productos')">PRODUCTOS</a></li>
+                    <li><a href="javascript:deslizar('contacto')">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section id="nosotros" class="nosotros">
+        <section id="nosotros" class="seccion nosotros">
             <div class="title">
                 <img src="./assets/icons/nosotros-icon.svg" alt="">
                 <h2>NOSOTROS</h2>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <section id="servicios" class="servicios">
+        <section id="servicios" class="seccion servicios">
             <div class="title">
                 <img src="./assets/icons/servicios-icon.svg" alt="">
                 <h2>SERVICIOS</h2>
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section id="productos" class="productos">
+        <section id="productos" class="seccion productos">
             <div class="title">
                 <img src="./assets/icons/productos-icon.svg" alt="">
                 <h2>PRODUCTOS</h2>
@@ -211,5 +211,7 @@
             <p>¿Cómo puedo ayudarte?</p>
         </a>
     </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

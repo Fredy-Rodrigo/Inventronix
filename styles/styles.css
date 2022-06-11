@@ -148,11 +148,12 @@ header .nav-container nav ul {
 }
 header .nav-container nav ul li {
   list-style: none;
-  padding: 100% 20px;
   color: #444444;
   transition: 0.3s;
 }
 header .nav-container nav ul li a {
+  display: block;
+  padding: 15px 20px;
   text-decoration: none;
   color: inherit;
   font-weight: bold;
@@ -164,6 +165,9 @@ header .nav-container nav ul li:hover {
 }
 header .banner img {
   width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 main {
@@ -174,6 +178,8 @@ main {
 }
 main .nosotros {
   width: 1100px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 main .nosotros .title {
   margin-top: 50px;
@@ -207,9 +213,12 @@ main .nosotros .nosot-container .nosot-img img {
   height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 20px;
 }
 main .servicios {
   width: 1100px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 main .servicios .title {
   margin-top: 70px;
@@ -248,6 +257,8 @@ main .servicios .serv-container .serv-img .serv-img-proyectos .card-front {
 }
 main .productos {
   width: 1110px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 main .productos .title {
   margin-top: 70px;
@@ -280,6 +291,18 @@ main .contacto .title img {
   width: 50px;
   padding-right: 20px;
 }
+main .efectoSeccion {
+  animation: mostrar 2s;
+}
+@keyframes mostrar {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 footer {
   background-color: #1e66c5;
 }

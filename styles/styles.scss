@@ -25,10 +25,11 @@ header {
                 @include flex(flex, space-between, none);
                 li {
                     list-style: none;
-                    padding: 100% 20px;
                     color: $word-color;
                     transition: 0.3s;
                     a {
+                        display: block;
+                        padding: 15px 20px;
                         text-decoration: none;
                         color: inherit;
                         font-weight: bold;
@@ -46,6 +47,9 @@ header {
     .banner {
         img {
             width: 100%;
+            max-height: 700px;
+            object-fit: cover;
+            object-position: bottom;
         }
     }
 }
@@ -56,6 +60,8 @@ main {
 
     .nosotros {
         width: 1100px;
+        opacity: 0;
+        transition: all 0.5s;
         .title {
             margin-top: 50px;
             display: flex;
@@ -86,6 +92,7 @@ main {
                     height: 100%;
                     object-fit: cover;
                     object-position: top;
+                    border-radius: 20px;
                 }
             }
         }
@@ -93,6 +100,8 @@ main {
 
     .servicios {
         width: 1100px;
+        opacity: 0;
+        transition: all 0.5s;
         .title {
             margin-top: 70px;
             display: flex;
@@ -145,6 +154,8 @@ main {
 
     .productos {
         width: 1110px;
+        opacity: 0;
+        transition: all 0.5s;
         .title {
             margin-top: 70px;
             display: flex;
@@ -185,6 +196,16 @@ main {
         .contac-container {
 
         }
+    }
+
+    .efectoSeccion {
+        animation: mostrar 2s;
+    }
+
+
+    @keyframes mostrar {
+        0% {transform: translateX(-100px);}
+        100% {transform: translateX(0);}
     }
 }
 
