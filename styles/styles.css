@@ -5,7 +5,7 @@
 }
 
 main .servicios .serv-container .serv-img .serv-card {
-  width: 25%;
+  width: 30%;
   height: 430px;
   position: relative;
 }
@@ -13,6 +13,7 @@ main .servicios .serv-container .serv-img .serv-card .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
   backface-visibility: hidden;
   transition: 1s;
   flex-direction: column;
@@ -23,7 +24,7 @@ main .servicios .serv-container .serv-img .serv-card .card-front {
   transform: perspective(500px) rotateY(0deg);
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
   text-shadow: 0 0 5px black;
 }
@@ -32,7 +33,7 @@ main .servicios .serv-container .serv-img .serv-card .card-front h3 {
 }
 main .servicios .serv-container .serv-img .serv-card .card-front p {
   width: 230px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 }
 main .servicios .serv-container .serv-img .serv-card .card-back {
@@ -134,7 +135,7 @@ header .nav-container {
 }
 header .nav-container .logo {
   width: 200px;
-  padding: 0 30px;
+  padding: 15px 30px 0 30px;
 }
 header .nav-container .logo img {
   width: 100%;
@@ -177,7 +178,8 @@ main {
   flex-direction: column;
 }
 main .nosotros {
-  width: 1100px;
+  width: 90%;
+  max-width: 1100px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -216,7 +218,8 @@ main .nosotros .nosot-container .nosot-img img {
   border-radius: 20px;
 }
 main .servicios {
-  width: 1100px;
+  width: 90%;
+  max-width: 1100px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -229,6 +232,9 @@ main .servicios .title img {
   width: 50px;
   padding-right: 20px;
 }
+main .servicios .serv-container {
+  width: 100%;
+}
 main .servicios .serv-container .serv-text p {
   padding: 18px 0 18px 70px;
   font-size: 18px;
@@ -236,8 +242,9 @@ main .servicios .serv-container .serv-text p {
   color: #444444;
 }
 main .servicios .serv-container .serv-img {
+  padding: 0 70px;
   display: flex;
-  justify-content: none;
+  justify-content: space-between;
   align-items: none;
 }
 main .servicios .serv-container .serv-img .serv-img-disenio .card-front {
@@ -256,7 +263,8 @@ main .servicios .serv-container .serv-img .serv-img-proyectos .card-front {
   background-image: url(../assets/images/proyectos-educativos.jpeg);
 }
 main .productos {
-  width: 1110px;
+  width: 90%;
+  max-width: 1100px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -279,7 +287,8 @@ main .productos .prod-container .prod-img {
   display: flex;
 }
 main .contacto {
-  width: 1100px;
+  width: 90%;
+  max-width: 1100px;
 }
 main .contacto .title {
   margin-top: 70px;
@@ -305,9 +314,11 @@ main .efectoSeccion {
 
 footer {
   background-color: #1e66c5;
+  padding-bottom: 40px;
 }
 footer .footer-container {
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
   padding: 30px 0;
   color: white;
@@ -320,22 +331,25 @@ footer .footer-container .horario {
 }
 footer .footer-container .horario .horario-title {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer .footer-container .horario p {
   margin: 0;
   line-height: 28px;
 }
-footer .footer-container .ubicacion {
+footer .footer-container .info-contacto {
   width: 33%;
 }
-footer .footer-container .ubicacion .ubicacion-title {
+footer .footer-container .info-contacto .info .title {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-footer .footer-container .ubicacion p {
+footer .footer-container .info-contacto .info p {
   margin: 0;
   line-height: 28px;
+}
+footer .footer-container .info-contacto .telefono {
+  margin-bottom: 30px;
 }
 footer .footer-container .consultas-redes {
   width: 33%;
@@ -362,7 +376,7 @@ footer .footer-container .consultas-redes .redes p {
   font-weight: bold;
 }
 footer .footer-container .consultas-redes .redes .redes-icons {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -10,13 +10,14 @@ $word-color: rgb(68, 68, 68);
 
 %serv-card {
     .serv-card {
-        width: 25%;
+        width: 30%;
         height: 430px;
         position: relative;
         .card-face {
             position: absolute;
             width: 100%;
             height: 100%;
+            border-radius: 15px;
             backface-visibility: hidden;
             transition: 1s;
             @extend %centrar;
@@ -28,7 +29,7 @@ $word-color: rgb(68, 68, 68);
             transform: perspective(500px) rotateY(0deg);
             background-position: center center;
             background-size: cover;
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.3);
             background-blend-mode: darken;
             text-shadow: 0 0 5px black;
             h3 {
@@ -36,7 +37,7 @@ $word-color: rgb(68, 68, 68);
             }
             p {
                 width: 230px;
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 26px;
             }
             .btn {
