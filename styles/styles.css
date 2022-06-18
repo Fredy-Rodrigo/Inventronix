@@ -5,8 +5,9 @@
 }
 
 main .servicios .serv-container .serv-img .serv-card {
-  width: 30%;
-  height: 430px;
+  width: 32%;
+  min-width: 270px;
+  height: 450px;
   position: relative;
 }
 main .servicios .serv-container .serv-img .serv-card .card-face {
@@ -32,7 +33,7 @@ main .servicios .serv-container .serv-img .serv-card .card-front h3 {
   font-size: 25px;
 }
 main .servicios .serv-container .serv-img .serv-card .card-front p {
-  width: 230px;
+  padding: 0 30px;
   font-size: 18px;
   line-height: 26px;
 }
@@ -41,7 +42,7 @@ main .servicios .serv-container .serv-img .serv-card .card-back {
   background-color: #353535;
 }
 main .servicios .serv-container .serv-img .serv-card .card-back p {
-  width: 230px;
+  padding: 0 30px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -127,8 +128,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  overflow: hidden;
+}
 header .nav-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   height: 70px;
+  box-shadow: 0 1px 5px #353535;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,6 +148,16 @@ header .nav-container .logo {
 }
 header .nav-container .logo img {
   width: 100%;
+}
+header .nav-container input {
+  display: none;
+}
+header .nav-container label {
+  display: none;
+}
+header .nav-container label img {
+  width: 35px;
+  height: 35px;
 }
 header .nav-container nav ul {
   margin: 0;
@@ -163,6 +182,9 @@ header .nav-container nav ul li:hover {
   background-color: #1e66c5;
   color: white;
   cursor: pointer;
+}
+header .banner {
+  margin-top: 70px;
 }
 header .banner img {
   width: 100%;
@@ -422,6 +444,192 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
 }
 .wsp-button a:hover {
   background-color: #28d843;
+}
+
+header .nav-container .logo, main .servicios .serv-container .serv-img .serv-card .card-face, main .productos .prod-container .prod-img .prod-card .card-face, footer .footer-container .consultas-redes .redes .redes-icons .icon, .wsp-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .servicios .serv-container .serv-img .serv-card {
+  width: 32%;
+  min-width: 270px;
+  height: 450px;
+  position: relative;
+}
+main .servicios .serv-container .serv-img .serv-card .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  transition: 1s;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+main .servicios .serv-container .serv-img .serv-card .card-front {
+  transform: perspective(500px) rotateY(0deg);
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  text-shadow: 0 0 5px black;
+}
+main .servicios .serv-container .serv-img .serv-card .card-front h3 {
+  font-size: 25px;
+}
+main .servicios .serv-container .serv-img .serv-card .card-front p {
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .servicios .serv-container .serv-img .serv-card .card-back {
+  transform: perspective(500px) rotateY(180deg);
+  background-color: #353535;
+}
+main .servicios .serv-container .serv-img .serv-card .card-back p {
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .servicios .serv-container .serv-img .serv-card .card-back .btn {
+  transition: 0.1s;
+}
+main .servicios .serv-container .serv-img .serv-card .card-back .btn:hover {
+  background-color: #2684ff;
+  box-shadow: 0 0 5px #2684ff;
+}
+main .servicios .serv-container .serv-img .serv-card:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+main .servicios .serv-container .serv-img .serv-card:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+main .productos .prod-container .prod-img .prod-card {
+  width: 25%;
+  height: 460px;
+  position: relative;
+}
+main .productos .prod-container .prod-img .prod-card .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+main .productos .prod-container .prod-img .prod-card .card-front {
+  transform: perspective(500px) rotateY(0deg);
+  background-color: white;
+}
+main .productos .prod-container .prod-img .prod-card .card-front img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+main .productos .prod-container .prod-img .prod-card .card-front h3 {
+  text-shadow: 0 0 10px black;
+  font-size: 20px;
+}
+main .productos .prod-container .prod-img .prod-card .card-back {
+  transform: perspective(500px) rotateY(180deg);
+  background-color: #353535;
+}
+main .productos .prod-container .prod-img .prod-card .card-back p {
+  line-height: 24px;
+  padding: 0 30px 20px 30px;
+}
+main .productos .prod-container .prod-img .prod-card .card-back button {
+  transition: 0.1s;
+}
+main .productos .prod-container .prod-img .prod-card .card-back button:hover {
+  background-color: #2684ff;
+  box-shadow: 0 0 5px #2684ff;
+}
+main .productos .prod-container .prod-img .prod-card:hover .card-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+main .productos .prod-container .prod-img .prod-card:hover .card-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+main .servicios .serv-container .serv-img .serv-card .card-front .btn, main .servicios .serv-container .serv-img .serv-card .card-back .btn, main .productos .prod-container .prod-img .prod-card .card-back button, footer .footer-container .consultas-redes .consultas a button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e66c5;
+  padding: 8px 25px;
+  margin: 1em 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  header .nav-container label {
+    margin-right: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  header .nav-container label img {
+    display: block;
+    margin: 10px;
+  }
+  header .nav-container nav {
+    margin-left: -100%;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  header .nav-container nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .nav-container nav ul li {
+    border-top: 1px solid #686868;
+  }
+  header .nav-container nav ul li a {
+    padding: 14px 0;
+  }
+  header .nav-container nav ul li:last-child {
+    box-shadow: 0 3px 5px -2px #353535;
+  }
+  header .nav-container #icon-menu:checked ~ nav {
+    margin-left: 0;
+  }
+
+  main .servicios .serv-container .serv-img {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  main .servicios .serv-container .serv-img .serv-card {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  main .productos .prod-container .prod-img {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .productos .prod-container .prod-img .prod-card {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 760px) {
+  main .productos .prod-container .prod-img {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .productos .prod-container .prod-img .prod-card {
+    width: 35%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

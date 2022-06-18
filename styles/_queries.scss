@@ -1,0 +1,95 @@
+@import "variables";
+
+@media screen and (max-width: 1000px) {
+    header {
+        .nav-container {
+            label {
+                margin-right: 20px;
+                display: block;
+                cursor: pointer;
+                img {
+                    display: block;
+                    margin: 10px;
+                }
+            }
+            nav {
+                margin-left: -100%;
+                position: absolute;
+                top: 70px;
+                background-color: white;
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    li {
+                        border-top: 1px solid #686868;
+                        a {
+                            padding: 14px 0;
+                        }
+                    }
+                    li:last-child {
+                        box-shadow: 0 3px 5px -2px $secondary-color;
+                    }
+                }
+                
+            }
+            #icon-menu:checked ~ nav{
+                margin-left: 0;
+            }
+        }
+    }
+
+    main{ 
+        .servicios {
+            .serv-container {
+                .serv-img {
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    .serv-card {
+                        width: 40%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }  
+        .productos {
+            .prod-container {
+                .prod-img {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .prod-card {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    main{ 
+        .servicios {
+            .serv-container {
+                .serv-img {
+                    .serv-card {
+                        
+                    }
+                }
+            }
+        }  
+        .productos {
+            .prod-container {
+                .prod-img {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .prod-card {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+}

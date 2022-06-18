@@ -10,8 +10,9 @@ $word-color: rgb(68, 68, 68);
 
 %serv-card {
     .serv-card {
-        width: 30%;
-        height: 430px;
+        width: 32%;
+        min-width: 270px;
+        height: 450px;
         position: relative;
         .card-face {
             position: absolute;
@@ -36,7 +37,7 @@ $word-color: rgb(68, 68, 68);
                 font-size: 25px;
             }
             p {
-                width: 230px;
+                padding: 0 30px;
                 font-size: 18px;
                 line-height: 26px;
             }
@@ -48,7 +49,7 @@ $word-color: rgb(68, 68, 68);
             transform: perspective(500px) rotateY(180deg);
             background-color: $secondary-color;
             p {
-                width: 230px;
+                padding: 0 30px;
                 font-size: 16px;
                 line-height: 22px;
             }
