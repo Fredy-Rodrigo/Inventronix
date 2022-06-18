@@ -134,7 +134,7 @@ main {
             width: 100%;
             .serv-text {
                 p {
-                    padding: 18px 0 18px 70px;
+                    padding: 18px 70px 18px 70px;
                     font-size: 18px;
                     line-height: 26px;
                     color: $word-color;
@@ -190,7 +190,7 @@ main {
         .prod-container {
             .prod-text {
                 p {
-                    padding: 18px 0 18px 70px;
+                    padding: 18px 70px 18px 70px;
                     font-size: 18px;
                     line-height: 26px;
                     color: $word-color;
@@ -243,7 +243,7 @@ footer {
         color: white;
         @include flex(flex, space-between, flex-start);
         .horario {
-            width: 33%;
+            width: 30%;
             .horario-title {
                 font-weight: bold;
                 margin-bottom: 10px;
@@ -254,7 +254,7 @@ footer {
             }
         }
         .info-contacto {
-            width: 33%;
+            width: 30%;
             .info {
                 .title {
                     font-weight: bold;
@@ -270,7 +270,7 @@ footer {
             }
         }
         .consultas-redes {
-            width: 33%;
+            width: 30%;
             .consultas {
                 p {
                     font-weight: bold;
@@ -278,7 +278,7 @@ footer {
                     line-height: 28px;
                 }
                 a {
-                    button {
+                    #consultar {
                         @extend %button;
                         background-color: $secondary-color;
                         transition: 0.1s;
@@ -287,9 +287,8 @@ footer {
                         padding: 0;
                         box-sizing: border-box;
                     }
-                    button:hover {
+                    #consultar:hover {
                         background-color: rgb(38, 132, 255);
-                        /* box-shadow: 0 0 5px rgb(38, 132, 255); */
                         border: 2px solid white;
                     }
                 }

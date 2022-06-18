@@ -1,5 +1,3 @@
-@import "variables";
-
 @media screen and (max-width: 1000px) {
     header {
         .nav-container {
@@ -66,29 +64,146 @@
             }
         }
     }
+
+    footer {
+        .footer-container {
+            .consultas-redes {
+                .redes {
+                    .redes-icons {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
     
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     main{ 
+        .nosotros {
+            .nosot-container {
+                flex-direction: column;
+                align-items: center;
+                .nosot-text {
+                    width: 90%;
+                    text-align: justify;
+                    p {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+                .nosot-img {
+                    width: 90%;
+                }
+            }
+        }
         .servicios {
             .serv-container {
+                .serv-text {
+                    width: 90%;
+                    margin: auto;
+                    p {
+                        padding: 18px 0;
+                    }
+                }
                 .serv-img {
+                    width: 90%;
+                    margin: auto;
+                    padding: 0;
                     .serv-card {
-                        
+                        width: 330px;
+                        .card-face {
+                            h3 {
+                                margin: 0 5px;
+                            }
+                        }
                     }
                 }
             }
         }  
         .productos {
             .prod-container {
+                .prod-text {
+                    width: 90%;
+                    margin: auto;
+                    p {
+                        padding: 18px 0;
+                    }
+                }
                 .prod-img {
                     flex-wrap: wrap;
                     justify-content: space-around;
                     .prod-card {
-                        width: 35%;
+                        width: 45%;
                     }
                 }
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            flex-direction: column;
+            @include flex(flex, none, center);
+            .horario {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                .horario-title {
+                    margin: 0;
+                }
+            }
+            .info-contacto {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                .info {
+                    .title {
+                        margin: 0;
+                    }
+                }
+            }
+            .consultas-redes {
+                width: 100%;
+                text-align: center;
+                .redes {
+                    .redes-icons {
+                        width: 250px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .productos {
+            .prod-container {
+                .prod-img {
+                    .prod-card {
+                        width: 290px;
+                        height: 450px;
+                    }
+                }
+            }
+        }
+    }
+
+    .wsp-button {
+        width: 58px;
+        height: 58px;
+        bottom: 20px;
+        right: 20px;
+        a {
+            border-radius: 40px;
+            img {
+                width: 40px;
+            }
+            p {
+                display: none;
             }
         }
     }
