@@ -584,8 +584,11 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
 }
 @media screen and (max-width: 600px) {
   main .productos .prod-container .prod-img .prod-card {
-    width: 290px;
-    height: 450px;
+    width: 270px;
+    height: 390px;
+  }
+  main .productos .prod-container .prod-img .prod-card .card-front img {
+    width: 70%;
   }
 
   .wsp-button {
@@ -602,6 +605,32 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
   }
   .wsp-button a p {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .nosotros .title img {
+    width: 40px;
+  }
+  main .nosotros .nosot-container .nosot-text p {
+    font-size: 16px;
+  }
+  main .servicios .title img {
+    width: 40px;
+  }
+  main .servicios .serv-container .serv-text p {
+    font-size: 16px;
+    padding: 0px 0 18px 0;
+  }
+  main .productos .title img {
+    width: 40px;
+  }
+  main .productos .prod-container .prod-text p {
+    font-size: 16px;
+    padding: 0;
+    margin: 16px 0 0 0;
+  }
+  main .contacto .title img {
+    width: 40px;
   }
 }
 

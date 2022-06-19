@@ -184,8 +184,13 @@
             .prod-container {
                 .prod-img {
                     .prod-card {
-                        width: 290px;
-                        height: 450px;
+                        width: 270px;
+                        height: 390px;
+                        .card-front {
+                            img {
+                                width: 70%;
+                            }
+                        }
                     }
                 }
             }
@@ -204,6 +209,63 @@
             }
             p {
                 display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        .nosotros {
+            .title {
+                img {
+                    width: 40px;
+                }
+            }
+            .nosot-container {
+                .nosot-text {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .servicios {
+            .title {
+                img {
+                    width: 40px;
+                }
+            }
+            .serv-container {
+                .serv-text {
+                    p {
+                        font-size: 16px;
+                        padding: 0px 0 18px 0;
+                    }
+                }
+            }
+        }
+        .productos {
+            .title {
+                img {
+                    width: 40px;
+                }
+            }
+            .prod-container {
+                .prod-text {
+                    p {
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 16px 0 0 0;
+                    }
+                }
+            }
+        }
+        .contacto {
+            .title {
+                img {
+                    width: 40px;
+                }
             }
         }
     }
