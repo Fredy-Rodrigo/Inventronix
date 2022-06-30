@@ -170,6 +170,204 @@ main {
                     }
                 }
             }
+            .serv-lb {
+                @extend %lb-serv;
+                overflow: auto;
+                .lb-disenio-container {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    min-height: 100%;
+                    @extend %centrar;
+                    display: none;
+                    .lb-disenio {
+                        position: relative;
+                        width: 800px;
+                        max-width: 90%;
+                        margin: 100px 0 30px 0;
+                        padding: 20px 50px 40px 50px;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        background-color: white;
+                        button {
+                            @extend %button-off;
+                        }
+                        h3 {
+                            text-align: center;
+                            font-size: 24px;
+                            color: $word-color;
+                        }
+                        h4 {
+                            color: white;
+                            text-shadow: 0 0 10px black;
+                            font-size: 20px;
+                        }
+                        .lb-disenio-contents-sw {
+                            display: flex;
+                            margin-bottom: 60px;
+                            gap: 25px;
+                            .lb-disenio-text {
+                                width: 50%;
+                                line-height: 24px;
+                                color: $word-color;
+                            }
+                            .lb-disenio-img {
+                                width: 50%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .lb-disenio-contents-ac {
+                            display: flex;
+                            gap: 30px;
+                            .lb-disenio-text {
+                                width: 50%;
+                                line-height: 24px;
+                                color: $word-color;
+                            }
+                            .lb-disenio-img {
+                                width: 50%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .show-disenio {
+                    display: flex;
+                }
+                .lb-impresion-container {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    min-height: 100%;
+                    @extend %centrar;
+                    display: none;
+                    .lb-impresion {
+                        position: relative;
+                        width: 800px;
+                        max-width: 90%;
+                        margin: 100px 0 30px 0;
+                        padding: 20px 0 30px 0;
+                        border-radius: 10px;
+                        background-color: white;
+                        text-align: center;
+                        color: $word-color;
+                        button {
+                            @extend %button-off;
+                        }
+                        h3 {
+                            font-size: 24px;
+                        }
+                        .lb-impresion-contents {
+                            width: 100%;
+                            height: 1894.5px;
+                            max-height: 201.75vw;
+                            padding: 20px 0 35px 0;
+                            box-sizing: border-box;
+                            background-image: url(../assets/images/lb-background.png);
+                            background-position: center center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            display: grid;
+                            grid-template-columns: 1fr 0.9fr 1fr;
+                            grid-template-rows: repeat(6,1fr);
+                            .lb-impresion-box {
+                                @extend %centrar;
+                                flex-direction: column;
+                                text-align: center;
+                                h4 {
+                                    color: white;
+                                    text-shadow: 0 0 10px black;
+                                    font-size: 20px;
+                                }
+                                p {
+                                    margin: 0;
+                                    padding: 0 10px;
+                                    line-height: 20px;
+                                }
+                                img {
+                                    width: 70%;
+                                }
+                                ul {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .show-impresion {
+                    display: flex;
+                }
+                .lb-proyectos-container {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    min-height: 100%;
+                    @extend %centrar;
+                    display: none;
+                    .lb-proyectos {
+                        position: relative;
+                        width: 800px;
+                        max-width: 90%;
+                        margin: 100px 0 30px 0;
+                        padding: 20px 50px 40px 50px;
+                        border-radius: 10px;
+                        box-sizing: border-box;
+                        background-color: white;
+                        color: $word-color;
+                        button {
+                            @extend %button-off;
+                        }
+                        h3 {
+                            text-align: center;
+                            font-size: 24px;
+                            color: $word-color;
+                        }
+                        h4 {
+                            color: white;
+                            text-shadow: 0 0 10px black;
+                            font-size: 20px;
+                        }
+                        .lb-proyectos-contents-colegios {
+                            display: flex;
+                            gap: 25px;
+                            .lb-proyectos-text {
+                                width: 50%;
+                                line-height: 24px;
+                                color: $word-color;
+                            }
+                            .lb-proyectos-img {
+                                width: 50%;
+                                img {
+                                    width: 100%;
+                                    height: 90%;
+                                }
+                            }
+                        }
+                        .lb-proyectos-contents-uninversidades {
+                            display: flex;
+                            gap: 25px;
+                            .lb-proyectos-text {
+                                width: 50%;
+                                line-height: 24px;
+                                color: $word-color;
+                            }
+                            .lb-proyectos-img {
+                                width: 50%;
+                                img {
+                                    width: 100%;
+                                    height: 90%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+                .show-proyectos {
+                    display: flex;
+                }
+            }
+            .show {
+                display: block;
+            }
         }
     }
 
@@ -221,7 +419,6 @@ main {
     .efectoSeccion {
         animation: mostrar 2s;
     }
-
 
     @keyframes mostrar {
         0% {transform: translateX(-100px);}

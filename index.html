@@ -39,7 +39,7 @@
             </div>
             <div class="nosot-container">
                 <div class="nosot-text">
-                    <p>Somos una empresa multidiciplinaria cuyo objetivo es ofrecer productos y servicios innovadores para la educación y vida cotidiana utilizando e integrando las últimas tendencias tecnológicas como el diseño 3D, impresión 3D; ademas de la transferencia, licenciamiento y venta de patentes de invención o modelos de utilidad.
+                    <p>Somos una empresa multidiciplinaria cuyo objetivo es ofrecer productos y servicios innovadores para la educación y vida cotidiana utilizando e integrando las últimas tendencias tecnológicas como el diseño 3D, impresión 3D; además de la transferencia, licenciamiento y venta de patentes de invención o modelos de utilidad.
                     </p>
                 </div>
                 <div class="nosot-img">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="card-face card-back">
                             <p>Cuéntanos tu idea de diseño y lo hacemos realidad con nuestro servicio de diseño 3D, lo que tu mente pueda imaginar lo podemos diseñar, animar o simular.</p>
-                            <button class="btn">Ver más</button>
+                            <button class="btn" id="btn-disenio">Ver más</button>
                         </div>
                     </div>
                     <div class="serv-card serv-img-impresion">
@@ -76,7 +76,7 @@
                         </div>
                         <div class="card-face card-back">
                             <p>Ofrecemos el servicio de fabricación aditiva también conocido como servicio de impresión 3D, ideal para prototipado de productos sin desembolsar gran cantidad de dinero como en un proceso tradicional. Lo hacemos a partir de una idea o diseño preliminar que tengas, ¿pero si no lo tienes?, no te preocupes, nuestro equipo se encargará de diseñarlo desde cero hasta imprimirlo.</p>
-                            <button class="btn">Ver más</button>
+                            <button class="btn" id="btn-impresion">Ver más</button>
                         </div>
                     </div>
                     <div class="serv-card serv-img-proyectos">
@@ -86,8 +86,146 @@
                             <button class="btn">Ver más</button>
                         </div>
                         <div class="card-face card-back">
-                            <p>Ayudamos a los estudiantes de colegios, institutos o universidades a realizar sus maquetas o proyectos de ciencias, ingenieria o arquitectura desde cero.</p>
-                            <button class="btn">Ver más</button>
+                            <p>Ayudamos a los estudiantes de colegios, institutos o universidades a realizar sus maquetas o proyectos de ciencias, ingeniería o arquitectura desde cero.</p>
+                            <button class="btn" id="btn-proyectos">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="serv-lb">
+                    <div class="lb-disenio-container">
+                        <div class="lb-disenio">
+                            <button id="btn-disenio-off">
+                                <img src="./assets/icons/x-icon.svg" alt="">
+                            </button>
+                            <h3>DISEÑO 3D</h3>
+                            <h4>SolidWorks</h4>
+                            <div class="lb-disenio-contents-sw">
+                                <div class="lb-disenio-text">
+                                    Con el software de ingeniería Solidworks se podrá realizar maquetas para proyectos universitarios
+                                    o prototipos para máquinas, sistemas o proyectos industriales, realizar estos tipos de prototipos
+suelen demandar mucho tiempo y esfuerzo, pero con la impresión 3D este tiempo se reducirá ya
+que no se tendrá que dar forma a los materiales y estos se imprimirán a medida exacta.
+                                </div>
+                                <div class="lb-disenio-img">
+                                    <img src="./assets/images/lb-solidworks.JPG" alt="">
+                                </div>
+                            </div>
+                            <h4>AutoCAD</h4>
+                            <div class="lb-disenio-contents-ac">
+                                <div class="lb-disenio-img">
+                                    <img src="./assets/images/lb-autocad.JPG" alt="">
+                                </div>
+                                <div class="lb-disenio-text">Con AutoCAD se podrán realizar los planos del prototipo diseñado a escala, con este planos se
+                                    podrán realizar ediciones en el caso de que se requiera para el diseño del proyecto real.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lb-impresion-container">
+                        <div class="lb-impresion">
+                            <button id="btn-impresion-off">
+                                <img src="./assets/icons/x-icon.svg" alt="">
+                            </button>
+                            <h3>IMPRESION 3D</h3>
+                            <p>Pasos para realizar tu impresión 3D.</p>
+                            <div class="lb-impresion-contents">
+                                <div class="lb-impresion-box"></div>
+                                <div class="lb-impresion-box">
+                                    <h4>PRIMER PASO</h4>
+                                    <p>Si tienes el archivo que deseas imprimir en 3D, nos lo envias por whatsapp, en caso no cuentes con el diseño, lo puedes buscar en repositorios de diseños 3D en línea o nosotros lo podemos diseñar.</p>
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-1.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-2.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <h4>SEGUNDO PASO</h4>
+                                    <p>Nos das las caracteristicas de cómo quieres que sea la impresión 3D:</p>
+                                    <ul>
+                                        <li>Tamaño</li>
+                                        <li>Color</li>
+                                        <li>Material</li>
+                                    </ul>
+                                </div>
+                                <div class="lb-impresion-box"></div>
+                                <div class="lb-impresion-box"></div>
+                                <div class="lb-impresion-box">
+                                    <h4>TERCER PASO</h4>
+                                    <p>Una vez nos hayas enviado tu diseño, nosotros utilizamos el laminador de Cura para ajustar los parámetros de impresión 3D.</p>
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-3.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-4.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <h4>CUARTO PASO</h4>
+                                    <p>Procedemos a imprimir el diseño con las características que nos diste en el paso 2.</p>
+                                </div>
+                                <div class="lb-impresion-box"></div>
+                                <div class="lb-impresion-box"></div>
+                                <div class="lb-impresion-box">
+                                    <h4>QUINTO PASO</h4>
+                                    <p>Una vez terminada la impresión 3D, te lo enviamos a tu casa o lo puedes recoger en la tienda.</p>
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-5.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <img src="./assets/images/lb-impresion-img-6.jpeg" alt="">
+                                </div>
+                                <div class="lb-impresion-box">
+                                    <h4>SEXTO PASO</h4>
+                                    <p>También ofrecemos el servicio de postprocesado que viene a ser el pintado de la pieza en 3D.</p>
+                                </div>
+                                <div class="lb-impresion-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lb-proyectos-container">
+                        <div class="lb-proyectos">
+                            <button id="btn-proyectos-off">
+                                <img src="./assets/icons/x-icon.svg" alt="">
+                            </button>
+                            <h3>PROYECTOS EDUCATIVOS</h3>
+                            <h4>Proyectos educativos en colegios</h4>
+                            <div class="lb-proyectos-contents-colegios">
+                                <div class="lb-proyectos-text">
+                                    El objetivo de este servicio de lasimpresiones en 3D esta enfocado en dar soporte a actividades
+de enseñanza-aprendizaje en los colegios, estos son utilizados como vía para que puedan
+adquirir mayor conocimiento y contribuir en el desarrollo de la competencia matemática y de
+las competencias básicas en ciencia y tecnología. El docente podrá utilizar objetos en 3D para
+realizar una clase más dinámica en diferentes materias como la matemática, educación física,
+música, educación plástica y audiovisual, biología y geología, geografía e historia entre otros.
+Algunos ejemplos podría ser la elaboración de instrumentos musicales, figuras geométricas,
+sistema solar, capas de la tierra, la célula animal y vegetal, órganos del cuerpo humano,
+maquetas de modelos de ecosistemas, maquetas de diferentes culturas pasadas, entre otros
+que ayuden a los alumnos a un mejor entendimiento de las materias. También se realizarán
+servicios de enseñanza en el diseño e impresión en 3D para diferentes proyectos
+interdisciplinarios.
+
+                                </div>
+                                <div class="lb-proyectos-img">
+                                    <img src="./assets/images/lb-proyectos-colegios.png" alt="">
+                                </div>
+                            </div>
+                            <h4>Proyectos educativos en universidades</h4>
+                            <div class="lb-proyectos-contents-uninversidades">
+                                <div class="lb-proyectos-img">
+                                    <img src="./assets/images/lb-proyectos-universidades.JPG" alt="">
+                                </div>
+                                <div class="lb-proyectos-text">
+                                    A falta de diferentes equipos o máquinas industriales en los laboratorios de las diferentes
+facultades ya sea en las universidades nacionales o privadas, nace la idea de poder generar
+prototipos de máquinas industriales y equipos que estén relacionado a la carrera de estudio. Es
+necesario que el alumno pueda conocer el funcionamiento de cada máquina o equipo de forma
+industrial, es por ello por lo que mediante maquetas dinámicas automatizadas (interactivas) en
+forma de unaplanta industrial prototipo podrá visualizar el funcionamiento, el diagrama de flujo
+y las operaciones involucradas, de forma personalizada para cada especialidad de ingeniería.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +248,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>ECOTACHO</h3>
-                            <p>Máquina clasificadora automática de 4 tipos de residuos solidos reciclables: botellas de plastico, residuos orgánicos, papeles y metales.</p>
+                            <p>Máquina clasificadora automática de 4 tipos de residuos sólidos reciclables: botellas de plástico, residuos orgánicos, papeles y metales.</p>
                             <button>Ver más</button>
                         </div>
                     </div>
@@ -143,7 +281,7 @@
                         </div>
                         <div class="card-face card-back">
                             <h3>SMART BABY SAFE</h3>
-                            <p>La presente invención consiste en un dispositivo de seguridad que permite mantener a un bebe en la cama dentro de una zona segura alertando en tiempo real al padre o supervisor del bebe.</p>
+                            <p>La presente invención consiste en un dispositivo de seguridad que permite mantener a un bebé en la cama dentro de una zona segura alertando en tiempo real al padre o supervisor del bebé.</p>
                             <button>Ver más</button>
                         </div>
                     </div>
@@ -168,7 +306,7 @@
             <div class="info-contacto">
                 <div class="info telefono">
                     <p class="title">Llámanos al:</p>
-                    <p>Teléfono: 966 519 352</p>
+                    <p>Teléfono: 966 519 351</p>
                 </div>
                 <div class="info correo">
                     <p class="title">Escríbenos al:</p>
