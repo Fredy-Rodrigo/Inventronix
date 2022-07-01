@@ -28,44 +28,67 @@ let lbServicios = document.getElementsByClassName('serv-lb');
 let lbDisenio = document.getElementsByClassName('lb-disenio-container');
 let btnDisenioOn = document.getElementById('btn-disenio');
 let btnDisenioOff = document.getElementById('btn-disenio-off');
+let disenioContainer = document.getElementsByClassName('lb-disenio-container');
 
 btnDisenioOn.addEventListener('click',()=>{
     lbServicios[0].classList.add('show');
-    lbDisenio[0].classList.add('show-disenio');
+    lbDisenio[0].classList.add('show-servicio');
 });
 
 btnDisenioOff.addEventListener('click',()=>{
     lbServicios[0].classList.remove('show');
-    lbDisenio[0].classList.remove('show-disenio');
+    lbDisenio[0].classList.remove('show-servicio');
+});
+
+disenioContainer[0].addEventListener('click',(e)=>{
+    if (!(document.getElementById('disenio-target').contains(e.target))){
+        lbServicios[0].classList.remove('show');
+        lbDisenio[0].classList.remove('show-servicio');
+    }
 });
 
 //para impresion 3d
 let lbImpresion = document.getElementsByClassName('lb-impresion-container');
 let btnImpresionOn = document.getElementById('btn-impresion');
 let btnImpresionOff = document.getElementById('btn-impresion-off');
+let impresionContainer = document.getElementsByClassName('lb-impresion-container');
 
 btnImpresionOn.addEventListener('click',()=>{
     lbServicios[0].classList.add('show');
-    lbImpresion[0].classList.add('show-impresion');
+    lbImpresion[0].classList.add('show-servicio');
 });
 
 btnImpresionOff.addEventListener('click',()=>{
     lbServicios[0].classList.remove('show');
-    lbImpresion[0].classList.remove('show-impresion');
+    lbImpresion[0].classList.remove('show-servicio');
 });
 
+impresionContainer[0].addEventListener('click',(e)=>{
+    if (!(document.getElementById('impresion-target').contains(e.target))){
+        lbServicios[0].classList.remove('show');
+        lbImpresion[0].classList.remove('show-servicio');
+    }
+});
 
 //para proyectos educativos
 let lbProyectos = document.getElementsByClassName('lb-proyectos-container');
 let btnProyectosOn = document.getElementById('btn-proyectos');
 let btnProyectosOff = document.getElementById('btn-proyectos-off');
+let proyectosContainer = document.getElementsByClassName('lb-proyectos-container');
 
 btnProyectosOn.addEventListener('click',()=>{
     lbServicios[0].classList.add('show');
-    lbProyectos[0].classList.add('show-proyectos');
+    lbProyectos[0].classList.add('show-servicio');
 });
 
 btnProyectosOff.addEventListener('click',()=>{
     lbServicios[0].classList.remove('show');
-    lbProyectos[0].classList.remove('show-proyectos');
+    lbProyectos[0].classList.remove('show-servicio');
+});
+
+proyectosContainer[0].addEventListener('click',(e)=>{
+    if (!(document.getElementById('proyectos-target').contains(e.target))){
+        lbServicios[0].classList.remove('show');
+        lbProyectos[0].classList.remove('show-servicio');
+    }
 });

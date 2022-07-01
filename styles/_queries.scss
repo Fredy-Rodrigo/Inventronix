@@ -223,9 +223,9 @@
                                 .lb-impresion-box {
                                     h4 {
                                         font-size: 2.3vw;
+                                        margin: 21px 0 10px 0;
                                     }
                                     p {
-                                        padding: 0;
                                         font-size: 2vw;
                                     }
                                     ul {
@@ -313,6 +313,27 @@
                 }
             }
         }
+        .servicios {
+            .serv-container {
+                .serv-lb {
+                    .lb-impresion-container {
+                        .lb-impresion {
+                            .lb-impresion-contents {
+                                padding: 20px 0 20px 0;
+                                .lb-impresion-box {
+                                    h4 {
+                                        margin: 10px 0 10px 0;
+                                    }
+                                    p {
+                                        padding: 0 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
     }
 
     .wsp-button {
@@ -359,6 +380,20 @@
                     p {
                         font-size: 16px;
                         padding: 0px 0 18px 0;
+                    }
+                }
+                .serv-lb {
+                    .lb-impresion-container {
+                        .lb-impresion {
+                            .lb-impresion-contents {
+                                padding: 10px 0 15px 0;
+                                .lb-impresion-box {
+                                    h4 {
+                                        margin: 10px 0 5px 0;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
