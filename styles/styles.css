@@ -149,6 +149,25 @@ main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos b
   width: 15px;
 }
 
+main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos .iframe-container, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .iframe-box .iframe-container, main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .iframe-container {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  height: 0;
+  padding-bottom: min(160%, 660px);
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos .iframe-container iframe, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .iframe-box .iframe-container iframe, main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -357,6 +376,7 @@ main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-d
 }
 main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-ac {
   display: flex;
+  margin-bottom: 60px;
   gap: 30px;
 }
 main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-ac .lb-disenio-text {
@@ -421,6 +441,17 @@ main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .
 main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box ul {
   margin: 0;
   padding: 0;
+}
+main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion h4 {
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-size: 20px;
+}
+main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .iframe-box {
+  padding: 0 30px;
+}
+main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .iframe-box .iframe-container {
+  margin-bottom: 30px;
 }
 main .servicios .serv-container .serv-lb .lb-proyectos-container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -921,11 +952,17 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
     font-size: 16px;
     padding: 0px 0 18px 0;
   }
+  main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio {
+    padding: 20px 30px 40px 30px;
+  }
   main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents {
     padding: 10px 0 15px 0;
   }
   main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box h4 {
     margin: 10px 0 5px 0;
+  }
+  main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos {
+    padding: 20px 30px 40px 30px;
   }
   main .productos .title img {
     width: 40px;

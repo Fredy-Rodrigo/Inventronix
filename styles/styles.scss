@@ -218,6 +218,7 @@ main {
                         }
                         .lb-disenio-contents-ac {
                             display: flex;
+                            margin-bottom: 60px;
                             gap: 30px;
                             .lb-disenio-text {
                                 width: 50%;
@@ -230,6 +231,9 @@ main {
                                     width: 100%;
                                 }
                             }
+                        }
+                        .iframe-container {
+                            @extend %iframes;
                         }
                     }
                 }
@@ -288,6 +292,19 @@ main {
                                 }
                             }
                         }
+                        h4 {
+                            color: white;
+                            text-shadow: 0 0 10px black;
+                            font-size: 20px;
+                        }
+                        .iframe-box {
+                            padding: 0 30px;
+                            .iframe-container {
+                                @extend %iframes;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        
                     }
                 }
                 .lb-proyectos-container {
@@ -350,6 +367,9 @@ main {
                                     object-fit: cover;
                                 }
                             }
+                        }
+                        .iframe-container {
+                            @extend %iframes;
                         }
                     }
                 }

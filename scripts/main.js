@@ -1,3 +1,4 @@
+
 /* BARRA DE MENU CON SCROLL AL HACER CLICK */
 const deslizar = (idSeccion) => {
     let seccion = document.getElementById(idSeccion);
@@ -92,3 +93,4 @@ proyectosContainer[0].addEventListener('click',(e)=>{
         lbProyectos[0].classList.remove('show-servicio');
     }
 });
+
