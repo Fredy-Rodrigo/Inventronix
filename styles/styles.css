@@ -429,6 +429,8 @@ main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .
 }
 main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box h4 {
   font-size: 20px;
+  color: #444444;
+  text-shadow: none;
 }
 main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box p {
   margin: 0;
