@@ -45,9 +45,18 @@
                 .serv-img {
                     justify-content: space-around;
                     flex-wrap: wrap;
-                    .serv-card {
+                    .serv-img-card {
                         width: 40%;
-                        margin-bottom: 10px;
+                        .serv-card {
+                            margin-bottom: 10px;
+                        }
+                        .btn-cotizar {
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                            a {
+                                padding: 8px 30px;
+                            }
+                        }
                     }
                 }
                 .serv-lb {
@@ -137,11 +146,13 @@
                     width: 90%;
                     margin: auto;
                     padding: 0;
-                    .serv-card {
+                    .serv-img-card {
                         width: 330px;
-                        .card-face {
-                            h3 {
-                                margin: 0 5px;
+                        .serv-card {
+                            .card-face {
+                                h3 {
+                                    margin: 0 5px;
+                                }
                             }
                         }
                     }
@@ -297,6 +308,28 @@
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        .banner {
+            .banner-text {
+                .banner-title {
+                    p {
+                        border-radius: 0 30px 30px 0;
+                        font-size: 5vw;
+                    }
+                }
+                .banner-contact {
+                    .banner-contact-wsp {
+                        padding: 1vw 2vw;
+                        gap: 1vw;
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     main {
         .productos {
             .prod-container {
@@ -354,6 +387,25 @@
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        .banner {
+            .banner-text {
+                .banner-title {
+                    p {
+                        font-size: 5.5vw;
+                    }
+                }
+                .banner-contact {
+                    .banner-contact-wsp {
+                        p {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     main {
         .nosotros {
             .title {

@@ -1,19 +1,18 @@
-.wsp-button a, footer .footer-container .consultas-redes .redes .redes-icons .icon, main .servicios .serv-container .serv-lb .lb-proyectos-container, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box, main .servicios .serv-container .serv-lb .lb-impresion-container, main .servicios .serv-container .serv-lb .lb-disenio-container, header .nav-container .logo, main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos button, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion button, main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio button, main .productos .prod-container .prod-img .prod-card .card-face, main .servicios .serv-container .serv-img .serv-card .card-face {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.wsp-button a, footer .footer-container .consultas-redes .redes .redes-icons .icon, main .servicios .serv-container .serv-lb .lb-proyectos-container, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents .lb-impresion-box, main .servicios .serv-container .serv-lb .lb-impresion-container, main .servicios .serv-container .serv-lb .lb-disenio-container, header .nav-container .logo, main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos button, main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion button, main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio button, main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-face {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .servicios .serv-container .serv-img .serv-card {
-  width: 32%;
-  min-width: 270px;
+main .servicios .serv-container .serv-img .serv-img-card .serv-card {
   height: 450px;
   position: relative;
 }
-main .servicios .serv-container .serv-img .serv-card .card-face {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-face {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 450px;
   border-radius: 15px;
   backface-visibility: hidden;
   transition: 1s;
@@ -21,7 +20,7 @@ main .servicios .serv-container .serv-img .serv-card .card-face {
   color: white;
   text-align: center;
 }
-main .servicios .serv-container .serv-img .serv-card .card-front {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-front {
   transform: perspective(500px) rotateY(0deg);
   background-position: center center;
   background-size: cover;
@@ -29,90 +28,38 @@ main .servicios .serv-container .serv-img .serv-card .card-front {
   background-blend-mode: darken;
   text-shadow: 0 0 5px black;
 }
-main .servicios .serv-container .serv-img .serv-card .card-front h3 {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-front h3 {
   font-size: 25px;
 }
-main .servicios .serv-container .serv-img .serv-card .card-front p {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-front p {
   padding: 0 30px;
   font-size: 18px;
   line-height: 26px;
 }
-main .servicios .serv-container .serv-img .serv-card .card-back {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-back {
   transform: perspective(500px) rotateY(180deg);
   background-color: #353535;
 }
-main .servicios .serv-container .serv-img .serv-card .card-back p {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-back p {
   padding: 0 30px;
   font-size: 16px;
   line-height: 22px;
 }
-main .servicios .serv-container .serv-img .serv-card .card-back .btn {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-back .btn {
   transition: 0.1s;
 }
-main .servicios .serv-container .serv-img .serv-card .card-back .btn:hover {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-back .btn:hover {
   background-color: #2684ff;
   box-shadow: 0 0 5px #2684ff;
 }
-main .servicios .serv-container .serv-img .serv-card:hover .card-front {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card:hover .card-front {
   transform: perspective(500px) rotateY(180deg);
 }
-main .servicios .serv-container .serv-img .serv-card:hover .card-back {
+main .servicios .serv-container .serv-img .serv-img-card .serv-card:hover .card-back {
   transform: perspective(500px) rotateY(360deg);
 }
 
-main .productos .prod-container .prod-img .prod-card {
-  width: 25%;
-  height: 460px;
-  position: relative;
-  margin-bottom: 30px;
-}
-main .productos .prod-container .prod-img .prod-card .card-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  transition: 1s;
-}
-main .productos .prod-container .prod-img .prod-card .card-front {
-  transform: perspective(500px) rotateY(0deg);
-  background-color: white;
-}
-main .productos .prod-container .prod-img .prod-card .card-front img {
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
-}
-main .productos .prod-container .prod-img .prod-card .card-front h3 {
-  text-shadow: 0 0 10px black;
-  font-size: 20px;
-}
-main .productos .prod-container .prod-img .prod-card .card-back {
-  transform: perspective(500px) rotateY(180deg);
-  background-color: #353535;
-}
-main .productos .prod-container .prod-img .prod-card .card-back p {
-  line-height: 24px;
-  padding: 0 30px 20px 30px;
-}
-main .productos .prod-container .prod-img .prod-card .card-back button {
-  transition: 0.1s;
-}
-main .productos .prod-container .prod-img .prod-card .card-back button:hover {
-  background-color: #2684ff;
-  box-shadow: 0 0 5px #2684ff;
-}
-main .productos .prod-container .prod-img .prod-card:hover .card-front {
-  transform: perspective(500px) rotateY(180deg);
-}
-main .productos .prod-container .prod-img .prod-card:hover .card-back {
-  transform: perspective(500px) rotateY(360deg);
-}
-
-footer .footer-container .consultas-redes .consultas a #consultar, main .servicios .serv-container .serv-img .serv-card .card-front .btn, main .servicios .serv-container .serv-img .serv-card .card-back .btn, main .productos .prod-container .prod-img .prod-card .card-back button {
+footer .footer-container .consultas-redes .consultas a #consultar, main .servicios .serv-container .serv-img .serv-img-card .btn-cotizar a, main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-front .btn, main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-back .btn {
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -171,7 +118,7 @@ main .servicios .serv-container .serv-lb .lb-proyectos-container .lb-proyectos .
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -190,7 +137,7 @@ header .nav-container {
 }
 header .nav-container .logo {
   width: 200px;
-  padding: 15px 30px 0 30px;
+  padding: 15px 30px 15px 30px;
 }
 header .nav-container .logo img {
   width: 100%;
@@ -231,12 +178,63 @@ header .nav-container nav ul li:hover {
 }
 header .banner {
   margin-top: 70px;
+  position: relative;
 }
 header .banner img {
   width: 100%;
   max-height: 700px;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
+}
+header .banner .banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+header .banner .banner-text .banner-title {
+  width: 70%;
+  display: flex;
+  margin-top: 3vw;
+  flex-direction: column;
+  align-items: start;
+}
+header .banner .banner-text .banner-title p {
+  padding: 0 3vw;
+  margin: 0.5vw 0;
+  border-radius: 0 30px 30px 0;
+  background-color: #1e66c5;
+  color: white;
+  font-size: 4vw;
+  font-weight: bold;
+}
+header .banner .banner-text .banner-contact {
+  width: 30%;
+  margin: 3vw 3vw 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+header .banner .banner-text .banner-contact .banner-contact-wsp {
+  background-color: #1e66c5;
+  padding: 0.5vw 1.5vw;
+  border-radius: 3vw;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+header .banner .banner-text .banner-contact .banner-contact-wsp img {
+  width: 3vw;
+}
+header .banner .banner-text .banner-contact .banner-contact-wsp p {
+  margin: 0;
+  display: inline;
+  color: white;
+  font-weight: bold;
+  font-size: 2vw;
 }
 
 main {
@@ -315,20 +313,64 @@ main .servicios .serv-container .serv-img {
   justify-content: space-between;
   align-items: none;
 }
-main .servicios .serv-container .serv-img .serv-img-disenio .card-front {
+main .servicios .serv-container .serv-img .serv-img-card {
+  width: 33%;
+  min-width: 270px;
+  text-align: center;
+}
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-disenio .card-front {
   background-image: url(../assets/images/disenio-3d.jpeg);
 }
-main .servicios .serv-container .serv-img .serv-img-impresion .card-front {
-  background-image: url(../assets/images/impresion-3d.jpeg);
-}
-main .servicios .serv-container .serv-img .serv-img-impresion .card-back p {
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-disenio .card-back p {
   margin-bottom: 0;
 }
-main .servicios .serv-container .serv-img .serv-img-soluciones .card-front {
-  background-image: url(../assets/images/soluciones-tecnologicas.jpeg);
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-impresion {
+  /* .btn-cotizar {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      a {
+          @extend %button;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 12px 40px;
+          border-radius: 40px;
+      }
+  } */
 }
-main .servicios .serv-container .serv-img .serv-img-proyectos .card-front {
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-impresion .card-front {
+  background-image: url(../assets/images/impresion-3d.jpeg);
+}
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-impresion .card-back p {
+  margin-bottom: 0;
+}
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-proyectos {
+  /* .btn-cotizar {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      a {
+          @extend %button;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 12px 40px;
+          border-radius: 40px;
+      }
+  } */
+}
+main .servicios .serv-container .serv-img .serv-img-card .serv-img-proyectos .card-front {
   background-image: url(../assets/images/proyectos-educativos.jpeg);
+}
+main .servicios .serv-container .serv-img .serv-img-card .btn-cotizar {
+  margin-top: 30px;
+}
+main .servicios .serv-container .serv-img .serv-img-card .btn-cotizar a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 40px;
+  border-radius: 40px;
 }
 main .servicios .serv-container .serv-lb {
   overflow: auto;
@@ -372,6 +414,8 @@ main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-d
 }
 main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-sw .lb-disenio-img img {
   width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px -15px;
 }
 main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-ac {
   display: flex;
@@ -388,6 +432,8 @@ main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-d
 }
 main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-ac .lb-disenio-img img {
   width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 0 15px 15px -15px;
 }
 main .servicios .serv-container .serv-lb .lb-impresion-container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -538,8 +584,34 @@ main .productos .prod-container .prod-text p {
   line-height: 26px;
   color: #444444;
 }
-main .productos .prod-container .prod-img {
+main .productos .prod-container .prod-img .caroussel .caroussel-container {
   display: flex;
+  align-items: center;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-container .caroussel-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-container .caroussel-button i {
+  font-size: 40px;
+  color: #1e66c5;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-container .caroussel-list .caroussel-element {
+  margin: 0 10px;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-container .caroussel-list .caroussel-element p:nth-child(3) {
+  font-weight: bold;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-container .caroussel-list .caroussel-element a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1e66c5;
+  font-size: 18px;
+  text-decoration: none;
+}
+main .productos .prod-container .prod-img .caroussel .caroussel-indicadores .active {
+  background-color: #1e66c5;
 }
 main .contacto {
   width: 90%;
@@ -718,9 +790,18 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  main .servicios .serv-container .serv-img .serv-card {
+  main .servicios .serv-container .serv-img .serv-img-card {
     width: 40%;
+  }
+  main .servicios .serv-container .serv-img .serv-img-card .serv-card {
     margin-bottom: 10px;
+  }
+  main .servicios .serv-container .serv-img .serv-img-card .btn-cotizar {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  main .servicios .serv-container .serv-img .serv-img-card .btn-cotizar a {
+    padding: 8px 30px;
   }
   main .servicios .serv-container .serv-lb .lb-impresion-container .lb-impresion .lb-impresion-contents {
     grid-template-rows: repeat 6, minmax(32.6vw, 306.25px);
@@ -779,10 +860,10 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
     margin: auto;
     padding: 0;
   }
-  main .servicios .serv-container .serv-img .serv-card {
+  main .servicios .serv-container .serv-img .serv-img-card {
     width: 330px;
   }
-  main .servicios .serv-container .serv-img .serv-card .card-face h3 {
+  main .servicios .serv-container .serv-img .serv-img-card .serv-card .card-face h3 {
     margin: 0 5px;
   }
   main .servicios .serv-container .serv-lb .lb-disenio-container .lb-disenio .lb-disenio-contents-sw {
@@ -904,6 +985,18 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
   }
 }
 @media screen and (max-width: 600px) {
+  header .banner .banner-text .banner-title p {
+    border-radius: 0 30px 30px 0;
+    font-size: 5vw;
+  }
+  header .banner .banner-text .banner-contact .banner-contact-wsp {
+    padding: 1vw 2vw;
+    gap: 1vw;
+  }
+  header .banner .banner-text .banner-contact .banner-contact-wsp p {
+    font-size: 3vw;
+  }
+
   main .productos .prod-container .prod-img .prod-card {
     width: 270px;
     height: 390px;
@@ -938,6 +1031,13 @@ footer .footer-container .consultas-redes .redes .redes-icons .icon:hover img {
   }
 }
 @media screen and (max-width: 480px) {
+  header .banner .banner-text .banner-title p {
+    font-size: 5.5vw;
+  }
+  header .banner .banner-text .banner-contact .banner-contact-wsp p {
+    font-size: 3.5vw;
+  }
+
   main .nosotros .title img {
     width: 40px;
   }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inventronix 3d - SERVICIO DE DISEÑO E IMPRESION 3D.">
     <title>Inventronix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
    
 </head>
@@ -29,6 +31,18 @@
         </div>
         <div class="banner">
             <img src="./assets/images/banner.jpeg" alt="">
+            <div class="banner-text">
+                <div class="banner-title">
+                    <p>TRANSFORMA TUS</p>
+                    <p>IDEAS EN REALIDAD</p>
+                </div>
+                <div class="banner-contact">
+                    <a class="banner-contact-wsp" href="https://wa.me/51901756895?text=Hola,%20solicito%20información" target="_blank">
+                        <img src="./assets/images/banner-wsp.png" alt="">
+                        <p>Cotiza ahora</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -40,7 +54,7 @@
             </div>
             <div class="nosot-container">
                 <div class="nosot-text">
-                    <p>Somos una empresa multidiciplinaria cuyo objetivo es ofrecer productos y servicios innovadores para la educación y vida cotidiana utilizando e integrando las últimas tendencias tecnológicas como el diseño 3D, impresión 3D; además de la transferencia, licenciamiento y venta de patentes de invención o modelos de utilidad.
+                    <p>Somos INVENTRONIX 3D, donde transformamos tus ideas en realidad, y te brindamos soluciones personalizadas con la ayuda de la impresión y diseño 3d. Utilizamos los mejores materiales y tecnologías para garantizar la calidad de nuestros productos enfocados en la vida cotidiana, educación, así como la industria. Te ayudaremos en hacer realidad tus ideas. ¡Contáctanos para poder ayudarte con tus necesidades de impresión 3D!.
                     </p>
                 </div>
                 <div class="nosot-img">
@@ -58,37 +72,52 @@
                     <p>No importa la necesidad que tengas, nuestro equipo lo puede hacer realidad.</p>
                 </div>
                 <div class="serv-img">
-                    <div class="serv-card serv-img-disenio">
-                        <div class="card-face card-front">
-                            <h3>DISEÑO 3D</h3>
-                            <p>Creamos diseños basados en tus necesidades.</p>
-                            <button class="btn">Ver más</button>
+                    <div class="serv-img-card">
+                        <div class="serv-card serv-img-disenio">
+                            <div class="card-face card-front">
+                                <h3>DISEÑO 3D</h3>
+                                <p>Creamos diseños basados en tus necesidades.</p>
+                                <button class="btn">Ver más</button>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>El diseño 3D es un proceso creativo para crear modelos tridimensionales en un entorno virtual. Con esto, se pueden simular y visualizar productos, edificios y objetos antes de fabricarlos. Es una herramienta poderosa para los profesionales en arquitectura, ingeniería, animación y muchos otros campos, y permite la exploración de formas, colores y detalles que antes eran imposibles de visualizar sin construcción física. ¡Imagina crear y experimentar con tus ideas antes de hacerlas realidad!.</p>
+                                <button class="btn" id="btn-disenio">Ver más</button>
+                            </div>
                         </div>
-                        <div class="card-face card-back">
-                            <p>Cuéntanos tu idea de diseño y lo hacemos realidad con nuestro servicio de diseño 3D, lo que tu mente pueda imaginar lo podemos diseñar, animar o simular.</p>
-                            <button class="btn" id="btn-disenio">Ver más</button>
-                        </div>
-                    </div>
-                    <div class="serv-card serv-img-impresion">
-                        <div class="card-face card-front">
-                            <h3>IMPRESION 3D</h3>
-                            <p>Plasmamos tus diseños en la vida real.</p>
-                            <button class="btn">Ver más</button>
-                        </div>
-                        <div class="card-face card-back">
-                            <p>Ofrecemos el servicio de fabricación aditiva también conocido como servicio de impresión 3D, ideal para prototipado de productos sin desembolsar gran cantidad de dinero como en un proceso tradicional. Lo hacemos a partir de una idea o diseño preliminar que tengas, ¿pero si no lo tienes?, no te preocupes, nuestro equipo se encargará de diseñarlo desde cero hasta imprimirlo.</p>
-                            <button class="btn" id="btn-impresion">Ver más</button>
+                        <div class="btn-cotizar">
+                            <a href="https://wa.me/51901756895?text=Hola,%20quiero%20cotizar%20un%20diseño%203D" target="_blank">Cotizar</a>
                         </div>
                     </div>
-                    <div class="serv-card serv-img-proyectos">
-                        <div class="card-face card-front">
-                            <h3>PROYECTOS EDUCATIVOS</h3>
-                            <p>Ayudamos a los estudiantes de colegios, universidades e institutos a realizar sus proyectos.</p>
-                            <button class="btn">Ver más</button>
+                    <div class="serv-img-card">
+                        <div class="serv-card serv-img-impresion">
+                            <div class="card-face card-front">
+                                <h3>IMPRESION 3D</h3>
+                                <p>Plasmamos tus diseños en la vida real.</p>
+                                <button class="btn">Ver más</button>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>La impresión 3D es una tecnología revolucionaria que permite la creación de objetos tridimensionales a partir de un diseño digital. Utilizando materiales como plásticos y metales, la impresora 3D deposita capas de material hasta formar el objeto deseado. Este proceso permite la fabricación de piezas únicas y personalizadas, y ha abierto nuevas posibilidades en la producción en masa y la fabricación de piezas de repuesto.</p>
+                                <button class="btn" id="btn-impresion">Ver más</button>
+                            </div>
                         </div>
-                        <div class="card-face card-back">
-                            <p>Ayudamos a los estudiantes de colegios, institutos o universidades a realizar sus maquetas o proyectos de ciencias, ingeniería o arquitectura desde cero.</p>
-                            <button class="btn" id="btn-proyectos">Ver más</button>
+                        <div class="btn-cotizar">
+                            <a href="https://wa.me/51901756895?text=Hola,%20quiero%20cotizar%20una%20impresión%203D" target="_blank">Cotizar</a>
+                        </div>
+                    </div>
+                    <div class="serv-img-card">
+                        <div class="serv-card serv-img-proyectos">
+                            <div class="card-face card-front">
+                                <h3>PROYECTOS EDUCATIVOS</h3>
+                                <p>Ayudamos a los estudiantes de colegios, universidades e institutos a realizar sus proyectos.</p>
+                                <button class="btn">Ver más</button>
+                            </div>
+                            <div class="card-face card-back">
+                                <p>Ayudamos a los estudiantes de colegios, institutos o universidades a realizar sus maquetas o proyectos de ciencias, ingeniería o arquitectura desde cero.</p>
+                                <button class="btn" id="btn-proyectos">Ver más</button>
+                            </div>
+                        </div>
+                        <div class="btn-cotizar">
+                            <a href="https://wa.me/51901756895?text=Hola,%20quiero%20cotizar%20un%20proyecto" target="_blank">Cotizar</a>
                         </div>
                     </div>
                 </div>
@@ -102,24 +131,28 @@
                             <h4>SolidWorks</h4>
                             <div class="lb-disenio-contents-sw">
                                 <div class="lb-disenio-text">
-                                    Con el software de ingeniería Solidworks se podrá realizar maquetas para proyectos universitarios
-                                    o prototipos para máquinas, sistemas o proyectos industriales, realizar estos tipos de prototipos suelen demandar mucho tiempo y esfuerzo, pero con la impresión 3D este tiempo se reducirá ya que no se tendrá que dar forma a los materiales y estos se imprimirán a medida exacta.
+                                    SolidWorks es un software de diseño en 3D utilizado en la industria para crear modelos tridimensionales de productos y maquinaria. Con SolidWorks, los ingenieros y diseñadores pueden visualizar y evaluar su trabajo en tiempo real antes de la fabricación, lo que les permite detectar y solucionar problemas de manera eficiente. ¿Te imaginas poder ver y probar tus diseños antes de construirlos?.
+En la impresión 3D, Solidworks se utiliza para crear archivos STL (Formato de Teselación), que son utilizados por las impresoras 3D para construir objetos físicos a partir de un modelo virtual. Con Solidworks, los usuarios pueden crear modelos complejos, hacer simulaciones y verificar la funcionalidad y el rendimiento de sus diseños antes de producirlos en impresoras 3D.
                                 </div>
                                 <div class="lb-disenio-img">
-                                    <img src="./assets/images/lb-solidworks.JPG" alt="">
+                                    <img src="./assets/images/lb-solidworks.jpeg" alt="">
+                                    <img src="./assets/images/lb-solidworks2.jpeg" alt="">
                                 </div>
                             </div>
-                            <h4>AutoCAD</h4>
+                            <h4>Blender</h4>
                             <div class="lb-disenio-contents-ac">
                                 <div class="lb-disenio-img">
-                                    <img src="./assets/images/lb-autocad.JPG" alt="">
+                                    <img src="./assets/images/lb-blender.jpeg" alt="">
+                                    <img src="./assets/images/lb-blender2.jpeg" alt="">
                                 </div>
-                                <div class="lb-disenio-text">Con AutoCAD se podrán realizar los planos del prototipo diseñado a escala, con este planos se
-                                    podrán realizar ediciones en el caso de que se requiera para el diseño del proyecto real.</div>
+                                <div class="lb-disenio-text">Blender es un software de creación de gráficos 3D de código abierto que permite a los usuarios crear modelos, animaciones y visualizaciones en 3D con una amplia variedad de herramientas y características avanzadas. Desde personajes animados hasta escenas realistas y objetos de juegos, Blender es una herramienta versátil para dar vida a tus ideas en un mundo tridimensional.</div>
                             </div>
                             <h4>Ejemplos:</h4>
                             <div class="iframe-container">
                                 <iframe src="https://www.instagram.com/p/CfdHv1SjStb/embed" frameborder="0" llowfullscreen></iframe>
+                            </div>
+                            <div class="iframe-container">
+                                <iframe src="https://www.instagram.com/p/CmcGZCOoOC0/embed" frameborder="0" llowfullscreen></iframe> 
                             </div>
                         </div>
                     </div>
@@ -188,11 +221,9 @@
                             <h4>Ejemplos:</h4>
                             <div class="iframe-box">
                                 <div class="iframe-container">
-                                    <iframe src="https://www.instagram.com/p/Ce-Wn8XsRYB/embed" frameborder="0" llowfullscreen></iframe>
+                                    <iframe src="https://www.instagram.com/p/CjQl4kEuucy/embed" frameborder="0" llowfullscreen></iframe>
                                 </div>
-                                <div class="iframe-container">
-                                    <iframe src="https://www.instagram.com/p/Ce-XzTJMfLk/embed" frameborder="0" llowfullscreen></iframe>
-                                </div>
+                                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@inventronix3d/video/7182213385633746182" data-video-id="7182213385633746182" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@inventronix3d" href="https://www.tiktok.com/@inventronix3d?refer=embed">@inventronix3d</a> figura de Ghost de Call of Duty para regalo de navidad <a title="callofduty" target="_blank" href="https://www.tiktok.com/tag/callofduty?refer=embed">#callofduty</a> <a title="ghostcallofduty" target="_blank" href="https://www.tiktok.com/tag/ghostcallofduty?refer=embed">#ghostcallofduty</a> <a title="ghostcallofdutymw2" target="_blank" href="https://www.tiktok.com/tag/ghostcallofdutymw2?refer=embed">#ghostcallofdutymw2</a> <a title="ghostcallofdutyedit" target="_blank" href="https://www.tiktok.com/tag/ghostcallofdutyedit?refer=embed">#ghostcallofdutyedit</a> <a title="regalodenavidad" target="_blank" href="https://www.tiktok.com/tag/regalodenavidad?refer=embed">#regalodenavidad</a> <a title="2023" target="_blank" href="https://www.tiktok.com/tag/2023?refer=embed">#2023</a> <a title="impresion3dperu" target="_blank" href="https://www.tiktok.com/tag/impresion3dperu?refer=embed">#impresion3dperu</a> <a title="impresion3d" target="_blank" href="https://www.tiktok.com/tag/impresion3d?refer=embed">#impresion3d</a> <a title="inventronix3d" target="_blank" href="https://www.tiktok.com/tag/inventronix3d?refer=embed">#inventronix3d</a> <a target="_blank" title="♬ Monkeys Spinning Monkeys - Kevin MacLeod &#38; Kevin The Monkey" href="https://www.tiktok.com/music/Monkeys-Spinning-Monkeys-6746993352891189249?refer=embed">♬ Monkeys Spinning Monkeys - Kevin MacLeod &#38; Kevin The Monkey</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
                             </div>
                         </div>
                     </div>
@@ -205,18 +236,7 @@
                             <h4>Proyectos educativos en colegios</h4>
                             <div class="lb-proyectos-contents-colegios">
                                 <div class="lb-proyectos-text">
-                                    El objetivo de este servicio de lasimpresiones en 3D esta enfocado en dar soporte a actividades
-de enseñanza-aprendizaje en los colegios, estos son utilizados como vía para que puedan
-adquirir mayor conocimiento y contribuir en el desarrollo de la competencia matemática y de
-las competencias básicas en ciencia y tecnología. El docente podrá utilizar objetos en 3D para
-realizar una clase más dinámica en diferentes materias como la matemática, educación física,
-música, educación plástica y audiovisual, biología y geología, geografía e historia entre otros.
-Algunos ejemplos podría ser la elaboración de instrumentos musicales, figuras geométricas,
-sistema solar, capas de la tierra, la célula animal y vegetal, órganos del cuerpo humano,
-maquetas de modelos de ecosistemas, maquetas de diferentes culturas pasadas, entre otros
-que ayuden a los alumnos a un mejor entendimiento de las materias. También se realizarán
-servicios de enseñanza en el diseño e impresión en 3D para diferentes proyectos
-interdisciplinarios.
+                                    La impresión 3D en los colegios puede ser una herramienta muy útil para el aprendizaje y la enseñanza en una variedad de materias, desde ciencias hasta arte y diseño. Permitiendo a los estudiantes crear y experimentar con modelos tridimensionales, y mejorar su capacidad para visualizar y entender conceptos complejos. Además, la impresión 3D también puede ser utilizada para crear prototipos, resolver problemas prácticos y mejorar la capacidad de innovación y resolución de problemas de los estudiantes.
 
                                 </div>
                                 <div class="lb-proyectos-img">
@@ -229,20 +249,16 @@ interdisciplinarios.
                                     <img src="./assets/images/lb-proyectos-universidades.JPG" alt="">
                                 </div>
                                 <div class="lb-proyectos-text">
-                                    A falta de diferentes equipos o máquinas industriales en los laboratorios de las diferentes
-facultades ya sea en las universidades nacionales o privadas, nace la idea de poder generar
-prototipos de máquinas industriales y equipos que estén relacionado a la carrera de estudio. Es
-necesario que el alumno pueda conocer el funcionamiento de cada máquina o equipo de forma
-industrial, es por ello por lo que mediante maquetas dinámicas automatizadas (interactivas) en
-forma de unaplanta industrial prototipo podrá visualizar el funcionamiento, el diagrama de flujo
-y las operaciones involucradas, de forma personalizada para cada especialidad de ingeniería.
+                                    La impresión 3D en las universidades se puede utilizar en diversas áreas como la investigación, la educación y el desarrollo de productos. Los estudiantes y profesores pueden crear prototipos de productos, modelos de ingeniería y maquetas arquitectónicas en 3D. Además, la impresión 3D puede ser utilizada en la investigación para crear modelos de células y tejidos, y para simular y testear productos antes de su producción en masa. También puede ser utilizada para desarrollar piezas de repuesto para máquinas y equipos en la universidad.
                                 </div>
                             </div>
                             <h4>Ejemplos:</h4>
                             <div class="iframe-container">
                                 <iframe src="https://www.instagram.com/p/CfURCK2DZxR/embed" frameborder="0" llowfullscreen></iframe>
                             </div>
-                            
+                            <div class="iframe-container">
+                                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finventronix3D%2Fposts%2Fpfbid02LaLswKJVfruHatqmEZ1cjZNdoBUqanUewyF8GMVfFXnDeSqhKtAey69c98zYUfMCl&show_text=true&width=500" width="500" height="686" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,49 +274,48 @@ y las operaciones involucradas, de forma personalizada para cada especialidad de
                     <p>No importa la necesidad que tengas, nuestro equipo lo puede hacer realidad.</p>
                 </div>
                 <div class="prod-img">
-                    <div class="prod-card prod-img-ecotacho">
-                        <div class="card-face card-front">
-                            <img src="./assets/images/ecotacho.jpg" alt="">
-                            <h3>ECOTACHO</h3>
+                    <div class="caroussel">
+                        <div class="caroussel-container">
+                            <button aria-label="anterior" class="caroussel-button caroussel-anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="caroussel-list">
+                                <div class="caroussel-element">
+                                    <img src="./assets/images/slide_spiderman_bust.jpg" alt="Busto de spiderman">
+                                    <p>Busto de Spiderman 14cm PLA</p>
+                                    <p>S/60.00</p>
+                                    <a href="https://wa.me/51901756895?text=Hola, quiero adquirir: busto de spiderman" target="_blank">Comprar ></a>
+                                </div>
+                                <div class="caroussel-element">
+                                    <img src="./assets/images/slide_granada.jpg" alt="Estuche en forma de granada">
+                                    <p>Caja en forma de granada 17.5cm PLA</p>
+                                    <p>S/50.00</p>
+                                    <a href="https://wa.me/51901756895?text=Hola, quiero adquirir: caja en forma de granada" target="_blank">Comprar ></a>
+                                </div>
+                                <div class="caroussel-element">
+                                    <img src="./assets/images/slide_bojack_horseman.jpg" alt="Bojack horseman">
+                                    <p>Bojack Horseman 15cm PLA</p>
+                                    <p>S/80.00</p>
+                                    <a href="https://wa.me/51901756895?text=Hola, quiero adquirir: Bojack horseman" target="_blank">Comprar ></a>
+                                </div>
+                                <div class="caroussel-element">
+                                    <img src="./assets/images/slide_piano_dbz.jpg" alt="Piano Dragon Ball Z">
+                                    <p>Piano Dragon Ball Z 11cm PLA</p>
+                                    <p>S/65.00</p>
+                                    <a href="https://wa.me/51901756895?text=Hola, quiero adquirir: Piano de Dragon Ball" target="_blank">Comprar ></a>
+                                </div>
+                                <div class="caroussel-element">
+                                    <img src="./assets/images/slide_robot.jpg" alt="Robot muñeco">
+                                    <p>Robot AO Jun 20cm PLA</p>
+                                    <p>S/165.00</p>
+                                    <a href="https://wa.me/51901756895?text=Hola, quiero adquirir: robot Ao Jun" target="_blank">Comprar ></a>
+                                </div>
+                            </div>
+                            <button aria-label="siguiente" class="caroussel-button caroussel-siguiente">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-                        <div class="card-face card-back">
-                            <h3>ECOTACHO</h3>
-                            <p>Máquina clasificadora automática de 4 tipos de residuos sólidos reciclables: botellas de plástico, residuos orgánicos, papeles y metales.</p>
-                            <button>Ver más</button>
-                        </div>
-                    </div>
-                    <div class="prod-card prod-img-recycler">
-                        <div class="card-face card-front">
-                            <img src="./assets/images/recycler.JPG" alt="">
-                            <h3>SMART RECYCLER</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <h3>SMART RECYCLER</h3>
-                            <p>Máquina portable multifuncional, donde se puede configurar en cualquier combinación de funciones de acuerdo a como se desea obtener las botellas PET a reciclar: compactado, triturado o solo recolectado.</p>
-                            <button>Ver más</button>
-                        </div>
-                    </div>
-                    <div class="prod-card prod-img-plataforma">
-                        <div class="card-face card-front">
-                            <img src="./assets/images/plataforma.JPG" alt="">
-                            <h3>PLATAFORMA ROBOTICA</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <h3>PLATAFORMA ROBOTICA</h3>
-                            <p>La presente invención describe una Plataforma Robótica Móvil Modular Multifuncional, que realiza una diversidad de tareas.</p>
-                            <button>Ver más</button>
-                        </div>
-                    </div>
-                    <div class="prod-card prod-img-smartbaby">
-                        <div class="card-face card-front">
-                            <img src="./assets/images/smartbaby.jpg" alt="">
-                            <h3>SMART BABY SAFE</h3>
-                        </div>
-                        <div class="card-face card-back">
-                            <h3>SMART BABY SAFE</h3>
-                            <p>La presente invención consiste en un dispositivo de seguridad que permite mantener a un bebé en la cama dentro de una zona segura alertando en tiempo real al padre o supervisor del bebé.</p>
-                            <button>Ver más</button>
-                        </div>
+                        <div role="tablist" class="caroussel-indicadores"></div>
                     </div>
                 </div>
             </div>
@@ -323,7 +338,7 @@ y las operaciones involucradas, de forma personalizada para cada especialidad de
             <div class="info-contacto">
                 <div class="info telefono">
                     <p class="title">Llámanos al:</p>
-                    <p>Teléfono: 966 519 351</p>
+                    <p>Teléfono: 901 756 895</p>
                 </div>
                 <div class="info correo">
                     <p class="title">Escríbenos al:</p>
@@ -333,7 +348,7 @@ y las operaciones involucradas, de forma personalizada para cada especialidad de
             <div class="consultas-redes">
                 <div class="consultas">
                     <p>Consultas y dudas:</p>
-                    <a href="https://wa.me/51966519351?text=Hola,%20solicito%20información" target="_blank"><button id="consultar">Consultar</button></a>
+                    <a href="https://wa.me/51901756895?text=Hola,%20solicito%20información" target="_blank"><button id="consultar">Consultar</button></a>
                 </div>
                 <div class="redes">
                     <p>Síguenos:</p>
@@ -357,12 +372,15 @@ y las operaciones involucradas, de forma personalizada para cada especialidad de
     </footer>
 
     <div class="wsp-button">
-        <a href="https://wa.me/51966519351?text=Hola,%20solicito%20información" target="_blank">
+        <a href="https://wa.me/51901756895?text=Hola,%20solicito%20información" target="_blank">
             <img src="./assets/icons/wsp-icon.svg" alt="">
             <p>¿Cómo puedo ayudarte?</p>
         </a>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+    <!-- fontawesome 5 -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
